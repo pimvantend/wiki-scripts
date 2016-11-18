@@ -4,8 +4,8 @@ import cookielib
 import re
 internet=True
 instukken=False
-dorpsnamen=False
-plaatsnaam='Alkmaar_(plaats)'
+plaatsnaam='Castricum'
+#'Alkmaar_(plaats)'
 #'Arnhem/Heijenoord_en_Lombok'
 #if '/' in plaatsnaam or '_' in plaatsnaam:
 doelbestand1=plaatsnaam.replace('/','')
@@ -59,6 +59,10 @@ regelnummer=0
 betekenis={}
 heelbestand=r.read()
 heelbestand=heelbestand.replace('<br />\n','')
+if '<th>Plaats<br' in heelbestand:
+    dorpsnamen=True
+else:
+    dorpsnamen=False
 r=heelbestand.split('\n')
 for regel in r:
     regelnummer+=1
