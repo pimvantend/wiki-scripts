@@ -1,18 +1,20 @@
 #!/usr/bin/python
 import mechanize
 import cookielib
-import sys
-import time
 import re
 internet=True
 instukken=False
 dorpsnamen=False
-plaatsnaam='Heiloo'
+plaatsnaam='Alkmaar_(plaats)'
 #'Arnhem/Heijenoord_en_Lombok'
-if '/' in plaatsnaam or '_' in plaatsnaam:
-    doelbestand='monumenten.gpx'
-else:
-    doelbestand=plaatsnaam.lower()+'.gpx'
+#if '/' in plaatsnaam or '_' in plaatsnaam:
+doelbestand1=plaatsnaam.replace('/','')
+doelbestand1=doelbestand1.replace('_','')
+doelbestand1=doelbestand1.replace('(','-')
+doelbestand1=doelbestand1.replace(')','')
+#'monumenten.gpx'
+#else:
+doelbestand=doelbestand1.lower()+'.gpx'
 doelbestand=open(doelbestand,'w')
 # Browser
 br = mechanize.Browser()
