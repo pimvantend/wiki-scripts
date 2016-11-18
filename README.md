@@ -5,4 +5,3 @@ wiki4gpx.py maakt een .gpx-bestand met de coordinaten van de gemeentelijke monum
 
 de belangrijkste aanpassing per plaats/gemeente is het invullen van de plaatsnaam voorin het script
 
-in sommige lijsten van gemeentelijke monumenten komt een kolom met dorpsnamen voor. dan moet dorpsnamen op True worden gezet.
