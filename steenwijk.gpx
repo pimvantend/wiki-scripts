@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+<wpt lat="52.73797" lon="5.95019">
+  <name>Baarlo tussen 2 en 4 Begraafplaats </name>
+</wpt>
+<wpt lat="52.8041852" lon="6.04624530000001">
+  <name>Basserweg 2 Boerderij </name>
+</wpt>
+<wpt lat="52.8040695" lon="6.042788400000063">
+  <name>Basserweg 6 + 6A Boerderij </name>
+</wpt>
+<wpt lat="52.8047311" lon="6.036836900000026">
+  <name>Basserweg 18 Boerderij </name>
+</wpt>
+<wpt lat="52.8023214" lon="6.046884500000033">
+  <name>Basserweg 3 Boerderij </name>
+</wpt>
+<wpt lat="52.7650403" lon="5.897513099999969">
+  <name>Kerkbuurt 10 Pastorie </name>
+</wpt>
+<wpt lat="52.7269286" lon="5.960263199999986">
+  <name>Brouwerstraat 1 Winkel-woonhuis </name>
+</wpt>
+<wpt lat="52.8152924" lon="6.138219800000002">
+  <name>Eesveenseweg Twee grenspaaltjes provinciegrens Overijssel/Drenthe </name>
+</wpt>
+<wpt lat="52.8283944" lon="6.14763819999996">
+  <name>Eesveenseweg 159 Landarbeiderswoning </name>
+</wpt>
+<wpt lat="52.8169724" lon="6.131908800000019">
+  <name>Binnenweg 3 Boerderij </name>
+</wpt>
+<wpt lat="52.7194346" lon="6.018627100000003">
+  <name>Jonenweg 19 Boerderij </name>
+</wpt>
+<wpt lat="52.7256154" lon="6.035768599999983">
+  <name>Dwarsgracht 36-38 School en woning </name>
+</wpt>
+<wpt lat="52.7261883" lon="6.034548399999949">
+  <name>Dwarsgracht 35 Boerderij </name>
+</wpt>
+<wpt lat="52.7151618" lon="6.083755500000052">
+  <name>Zuiderpad 1A Gemaal </name>
+</wpt>
+<wpt lat="52.7291445" lon="6.077819099999942">
+  <name>Beulakerweg 125 Woonhuis en dokterspraktijk </name>
+</wpt>
+<wpt lat="52.7394036" lon="6.076973800000019">
+  <name>Beulakerweg 82 Woonhuis </name>
+</wpt>
+<wpt lat="52.75074619999999" lon="6.081462299999998">
+  <name>Beulakerweg 59 Boerderij </name>
+</wpt>
+<wpt lat="52.7257936" lon="6.089875000000006">
+  <name>Binnenpad 22-24 Woonhuis </name>
+</wpt>
+<wpt lat="52.72682409999999" lon="6.090379999999982">
+  <name>Binnenpad 21 Boerderij </name>
+</wpt>
+<wpt lat="52.71881339999999" lon="6.090917699999977">
+  <name>Binnenpad 133 Boerderij </name>
+</wpt>
+<wpt lat="52.7174354" lon="6.089903999999933">
+  <name>Binnenpad 88 Boerderij </name>
+</wpt>
+<wpt lat="52.7201001" lon="6.090657100000044">
+  <name>Binnenpad 121 Boerderij </name>
+</wpt>
+<wpt lat="52.7188184" lon="6.090074100000038">
+  <name>Binnenpad 82 Boerderij </name>
+</wpt>
+<wpt lat="52.80820079999999" lon="5.9576938000000155">
+  <name>IJsselhammerweg 8 Boerderij </name>
+</wpt>
+<wpt lat="52.77662609999999" lon="5.952836599999955">
+  <name>Kalenberg Noord 45 Vervenershuisje </name>
+</wpt>
+<wpt lat="52.77621610000001" lon="5.955898899999966">
+  <name>Kalenbergerpad 2 Kerkgebouw </name>
+</wpt>
+<wpt lat="52.79535809999999" lon="6.172283300000004">
+  <name>Kallenkote Algemene begraafplaats </name>
+</wpt>
+<wpt lat="52.7876209" lon="6.154564199999982">
+  <name>Kallenkote 7 Boerderij </name>
+</wpt>
+<wpt lat="52.79383439999999" lon="5.839796999999976">
+  <name>H. de Cranestraat 185 Pastorie </name>
+</wpt>
+<wpt lat="52.7876615" lon="5.841211499999986">
+  <name> Punter KU11 </name>
+</wpt>
+<wpt lat="52.79555269999999" lon="5.838872000000038">
+  <name>Slijkenburgerdijk Begraafplaats </name>
+</wpt>
+<wpt lat="52.79555269999999" lon="5.838872000000038">
+  <name>Slijkenburgerdijk Begraafplaats </name>
+</wpt>
+<wpt lat="52.7945662" lon="5.839790799999946">
+  <name>H. de Cranestraat 191 Boerderij </name>
+</wpt>
+<wpt lat="52.7907603" lon="5.839790099999959">
+  <name>H. de Cranestraat 105 Burgemeesterwoning </name>
+</wpt>
+<wpt lat="52.7877308" lon="5.840055200000052">
+  <name>H. de Cranestraat 15 Woonhuis </name>
+</wpt>
+<wpt lat="52.78766779999999" lon="5.840069399999948">
+  <name>H. de Cranestraat 11 Woonhuis </name>
+</wpt>
+<wpt lat="52.7892419" lon="5.840185700000006">
+  <name>H. de Cranestraat 57 Woonhuis </name>
+</wpt>
+<wpt lat="52.7878036" lon="5.839818799999989">
+  <name>H. de Cranestraat 17 Woonhuis </name>
+</wpt>
+<wpt lat="52.8155605" lon="5.985304799999994">
+  <name>Koningin Julianaweg 50 Begraafplaats </name>
+</wpt>
+<wpt lat="52.81774129999999" lon="5.976894300000026">
+  <name>Koningin Julianaweg 20 Woonhuis </name>
+</wpt>
+<wpt lat="52.8192527" lon="5.976558599999976">
+  <name>Koningin Julianaweg 1 Woonhuis </name>
+</wpt>
+<wpt lat="52.8189137" lon="5.976049699999976">
+  <name>Koningin Julianaweg 2a Woonhuis </name>
+</wpt>
+<wpt lat="52.822621" lon="5.971441300000038">
+  <name>Hoofdstraat 99-101 Woonhuis </name>
+</wpt>
+<wpt lat="52.82148830000001" lon="5.971515199999999">
+  <name>Kruisstraat 28-30 Woonhuis </name>
+</wpt>
+<wpt lat="52.8189489" lon="5.987012499999992">
+  <name>Westerdallaan 7 Woonhuis </name>
+</wpt>
+<wpt lat="52.82198649999999" lon="5.9707058999999845">
+  <name>Marktplein 6 Woonhuis </name>
+</wpt>
+<wpt lat="52.8215868" lon="5.973415400000022">
+  <name>Hoofdstraat 71-71a Bakkerij </name>
+</wpt>
+<wpt lat="52.8213598" lon="5.971009200000026">
+  <name>Kruisstraat 38 Woonhuis </name>
+</wpt>
+<wpt lat="52.8159528" lon="5.980533899999955">
+  <name>Koningin Julianaweg 55-57-59-61 Woonhuis </name>
+</wpt>
+<wpt lat="52.82177739999999" lon="5.973032200000034">
+  <name>Hoofdstraat 77 Woonhuis </name>
+</wpt>
+<wpt lat="52.8200706" lon="5.974715300000071">
+  <name>Hoofdstraat 27 Woonhuis </name>
+</wpt>
+<wpt lat="52.8200336" lon="5.974937299999965">
+  <name>Hoofdstraat 25 Woonhuis </name>
+</wpt>
+<wpt lat="52.8198477" lon="5.976180900000031">
+  <name>Frieseweg 1 Woonhuis </name>
+</wpt>
+<wpt lat="52.8215071" lon="5.989406400000007">
+  <name>Dal 5 Begraafplaats met baarhuisje </name>
+</wpt>
+<wpt lat="52.8205641" lon="5.9748703000000205">
+  <name>Hoofdstraat 36 Woonhuis/winkel </name>
+</wpt>
+<wpt lat="52.8212328" lon="5.9741374999999834">
+  <name>Hoofdstraat 56 Woonhuis </name>
+</wpt>
+<wpt lat="52.82214070000001" lon="5.972250799999983">
+  <name>Hoofdstraat 93 Woonhuis </name>
+</wpt>
+<wpt lat="52.8217413" lon="5.973076200000037">
+  <name>Hoofdstraat 75 Woonhuis </name>
+</wpt>
+<wpt lat="52.8216778" lon="5.973179200000004">
+  <name>Hoofdstraat 73 Woonhuis/winkel/kantoor </name>
+</wpt>
+<wpt lat="52.8231616" lon="5.97115180000003">
+  <name>Hoofdstraat 144 Woonhuis </name>
+</wpt>
+<wpt lat="52.80595700000001" lon="5.914124700000002">
+  <name>Lageweg 19 Begraafplaats </name>
+</wpt>
+<wpt lat="52.8052906" lon="6.011190199999987">
+  <name>Hooiweg 6 Boerderij </name>
+</wpt>
+<wpt lat="52.78839110000001" lon="6.023860799999966">
+  <name>A.F. Stroinkweg 10 Gemaal </name>
+</wpt>
+<wpt lat="52.68377659999999" lon="6.000900600000023">
+  <name>Leeuwte 70 Boerderij </name>
+</wpt>
+<wpt lat="52.6782048" lon="6.008921600000008">
+  <name>Kloosterweg Kloostermuur </name>
+</wpt>
+<wpt lat="52.6809865" lon="6.003136700000027">
+  <name>Leeuwte 81 Kerkgebouw </name>
+</wpt>
+<wpt lat="52.6717958" lon="6.004547699999989">
+  <name>Bergkampen 31 Boerderij </name>
+</wpt>
+<wpt lat="52.6715954" lon="5.982161399999995">
+  <name>Halleweg 3 Boerderij </name>
+</wpt>
+<wpt lat="52.7886625" lon="6.1204574999999295">
+  <name>Stationsstraat 9 Woonhuis </name>
+</wpt>
+<wpt lat="52.7881122" lon="6.120804099999987">
+  <name>Stationsstraat 10 Villa </name>
+</wpt>
+<wpt lat="52.7888753" lon="6.120920599999977">
+  <name>Stationsstraat 28 Woonhuis </name>
+</wpt>
+<wpt lat="52.7886541" lon="6.120549200000028">
+  <name>Stationsstraat 7 Woonhuis </name>
+</wpt>
+<wpt lat="52.78901860000001" lon="6.121012000000064">
+  <name>Stationsstraat 30 Woonhuis </name>
+</wpt>
+<wpt lat="52.78883949999999" lon="6.120905200000038">
+  <name>Stationsstraat 26 Woonhuis </name>
+</wpt>
+<wpt lat="52.7883583" lon="6.120230099999958">
+  <name>Stationsstraat 3 Woonhuis </name>
+</wpt>
+<wpt lat="52.78870999999999" lon="6.1205605000000105">
+  <name>Stationsstraat 11 Woonhuis </name>
+</wpt>
+<wpt lat="52.7930748" lon="6.121969499999977">
+  <name>Eesveenseweg 27 Gemaaltje </name>
+</wpt>
+<wpt lat="52.78815239999999" lon="6.116590500000029">
+  <name>Goeman Borgesiusstraat Straatklok </name>
+</wpt>
+<wpt lat="52.7869277" lon="6.123422800000071">
+  <name>Meppelerweg 22 Woonhuis </name>
+</wpt>
+<wpt lat="52.7875483" lon="6.12206249999997">
+  <name>Meppelerweg 37 Woonhuis </name>
+</wpt>
+<wpt lat="52.7871603" lon="6.125042500000063">
+  <name>Meppelerweg 61 Herenhuis </name>
+</wpt>
+<wpt lat="52.7869492" lon="6.128655799999933">
+  <name>Meppelerweg 79 Algemene begraafplaats </name>
+</wpt>
+<wpt lat="52.8061022" lon="6.0665464999999585">
+  <name>Ten Holtheweg 52 Boerderij </name>
+</wpt>
+<wpt lat="52.8012425" lon="6.059828100000004">
+  <name>Gelderingen 57 Boerderij </name>
+</wpt>
+<wpt lat="52.8039529" lon="6.066809799999987">
+  <name>Oldermarktseweg 94 Begraafplaats </name>
+</wpt>
+<wpt lat="52.6878091" lon="5.965197900000021">
+  <name>Moespot 17 Horeca </name>
+</wpt>
+<wpt lat="52.6809504" lon="5.957979900000055">
+  <name>Weg van Rollecate 13 RK-kerkhof </name>
+</wpt>
+<wpt lat="52.68055750000001" lon="5.9522792999999865">
+  <name>Groenestraat 25 Woonhuis </name>
+</wpt>
+<wpt lat="52.68085199999999" lon="5.948926300000039">
+  <name>Bentstraat 6 Havezate </name>
+</wpt>
+<wpt lat="52.67938359999999" lon="5.94967650000001">
+  <name>Bentstraat 34 Woonhuis </name>
+</wpt>
+<wpt lat="52.6811018" lon="5.952733599999988">
+  <name>Bisschopstraat 56 Woonhuis </name>
+</wpt>
+<wpt lat="52.6810227" lon="5.952743700000042">
+  <name>Bisschopstraat 56A Woonhuis </name>
+</wpt>
+<wpt lat="52.6808109" lon="5.9575763999999936">
+  <name>Clarenberglaan 1 Woonhuis </name>
+</wpt>
+<wpt lat="52.7065497" lon="6.134518000000071">
+  <name>Veneweg 54 Boerderij </name>
+</wpt>
+<wpt lat="52.8248532" lon="6.062624300000039">
+  <name>Steenwijkerweg 157 Pastorie </name>
+</wpt>
+<wpt lat="52.8337541" lon="6.070894599999974">
+  <name>Ronde Blesse 2 Landbouwschool </name>
+</wpt>
+<wpt lat="52.83037239999999" lon="6.076538600000049">
+  <name>Kon. Wilhelminalaan 42 Boerderij </name>
+</wpt>
+<wpt lat="52.776499" lon="6.110658400000034">
+  <name>Burgemeester Stroinkweg 46 Boerderij </name>
+</wpt>
+</gpx>

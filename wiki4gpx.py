@@ -3,11 +3,11 @@ import mechanize
 import cookielib
 import re
 internet=True
-instukken=False
-plaatsnaam='Castricum'
+plaatsnaam='Bemmel'
 #'Alkmaar_(plaats)'
 #'Arnhem/Heijenoord_en_Lombok'
 #if '/' in plaatsnaam or '_' in plaatsnaam:
+instukken=False
 doelbestand1=plaatsnaam.replace('/','')
 doelbestand1=doelbestand1.replace('_','')
 doelbestand1=doelbestand1.replace('(','-')
