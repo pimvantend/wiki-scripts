@@ -5,3 +5,5 @@ wiki4gpx.py maakt een .gpx-bestand met de coordinaten van de gemeentelijke monum
 
 de belangrijkste aanpassing per plaats/gemeente is het invullen van de plaatsnaam voorin het script
 
+te doen: verwijderen [] en ;
+
