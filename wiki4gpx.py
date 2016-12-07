@@ -102,6 +102,10 @@ for regel in r:
 	    vindtekst=re.findall(r'<(.*?)>',naamtekst)
 	    for ding in vindtekst:
 		naamtekst=naamtekst.replace('<'+ding+'>','')
+	    vindtekst=re.findall(r'\[(.*?)\]',naamtekst)
+	    for ding in vindtekst:
+		naamtekst=naamtekst.replace('['+ding+']','')
+	    naamtekst=naamtekst.replace(';','')
 	    if len(latlijst[0])>0:
 		doelbestand.write('<wpt lat="'+latlijst[0]+'" lon="'+lonlijst[0]+'">\n')
 		doelbestand.write('  <name>'+naamtekst+' '+'</name>\n')
