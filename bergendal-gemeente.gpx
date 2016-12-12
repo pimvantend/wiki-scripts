@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+<wpt lat="51.8424738" lon="5.971899">
+  <name>Erlecomseweg 80 Boerderij Eindschenhof </name>
+</wpt>
+<wpt lat="51.8124952" lon="5.8866193">
+  <name>Nijmeegsebaan 56 Woning </name>
+</wpt>
+<wpt lat="51.8432109" lon="5.9808478">
+  <name>Duffeltdijk 1 Boerderij Kraaienhof </name>
+</wpt>
+<wpt lat="51.8425565" lon="5.9822612">
+  <name>Duffeltdijk 6 Boerderijtje a/d dijk </name>
+</wpt>
+<wpt lat="51.8464969" lon="5.9868993">
+  <name>Duffeltdijk 12 nabij Duffeltdijk 12 Transformatorhuisje </name>
+</wpt>
+<wpt lat="51.8383843" lon="5.9931031">
+  <name>Kerkplein 7 Woonhuis, wederopbouw </name>
+</wpt>
+<wpt lat="51.8374288" lon="5.9936271">
+  <name>Plezenburgsestraat 2 Boerderij De Pol </name>
+</wpt>
+<wpt lat="51.8362793" lon="5.9986174">
+  <name>Plezenburgsestraat 5 Woonhuis </name>
+</wpt>
+<wpt lat="51.8394397" lon="5.9941186">
+  <name>Reusensestraat 10 Boerderij </name>
+</wpt>
+<wpt lat="51.8384975" lon="5.9813779">
+  <name>Steenheuvelsestraat 3 Boerderij Dijkhoeve </name>
+</wpt>
+<wpt lat="51.8383847" lon="5.984252">
+  <name>Steenheuvelsestraat 7 Voormalige stoomzuivelfabriek, schoorsteen </name>
+</wpt>
+<wpt lat="51.8378516" lon="5.9865665">
+  <name>Steenheuvelsestraat 18 Woonhuis </name>
+</wpt>
+<wpt lat="51.8378826" lon="5.9875246">
+  <name>Steenheuvelsestraat 26-26a Woonhuis </name>
+</wpt>
+<wpt lat="51.8376551" lon="5.9915698">
+  <name>Steenheuvelsestraat 66 Woonhuis, voormalig postkantoor </name>
+</wpt>
+<wpt lat="51.8365943" lon="5.9916136">
+  <name>Pastoor van Tielstraat 60 Boerderij De Hoekpol </name>
+</wpt>
+<wpt lat="51.8460629" lon="5.939815">
+  <name>Leuthsestraat 7 Boerderij (Wercheren) </name>
+</wpt>
+<wpt lat="51.8461699" lon="5.9399905">
+  <name>Leuthsestraat 9 Boerderij (Wercheren) </name>
+</wpt>
+<wpt lat="51.8452641" lon="5.9414596">
+  <name>Leuthsestraat 13 T-Boerderij Groot Küppenhof </name>
+</wpt>
+<wpt lat="51.8454417" lon="5.9419262">
+  <name>Leuthsestraat 15 T-Boerderij (Wercheren) </name>
+</wpt>
+<wpt lat="51.8410695" lon="5.9174651">
+  <name>Persingensestraat 7 Orgel in kerk Persingen </name>
+</wpt>
+<wpt lat="51.8409481" lon="5.9488594">
+  <name>Wercherensestraat 2 Hallenhuis boerderij </name>
+</wpt>
+<wpt lat="51.816867" lon="5.9306657">
+  <name>Oude Kleefsebaan 136 Villa </name>
+</wpt>
+<wpt lat="51.816867" lon="5.9306657">
+  <name>Oude Kleefsebaan 136 Oranjerie </name>
+</wpt>
+<wpt lat="51.8024991" lon="5.9235355">
+  <name>Zevenheuvelenweg, nabij 47 Luchtwachttoren </name>
+</wpt>
+<wpt lat="51.8019097" lon="5.8985336">
+  <name>Nijmeegsebaan 31 V.m. lighal Dekkerswald </name>
+</wpt>
+<wpt lat="51.8511271" lon="6.0091386">
+  <name>Botsestraat 22 Boerderij Grote Both </name>
+</wpt>
+<wpt lat="51.8600419" lon="6.019569">
+  <name>Botsestraat 31 Boerderij </name>
+</wpt>
+<wpt lat="51.8609095" lon="6.0186956">
+  <name>Botsestraat 33 + 35 Dubbel woonhuis, voormalige kaasfabriek Onder Ons </name>
+</wpt>
+<wpt lat="51.8609198" lon="6.0184489">
+  <name>Botsestraat 37 Woonhuis, voormalige directeurswoning </name>
+</wpt>
+<wpt lat="51.8610145" lon="6.0190295">
+  <name>Botsestraat 44 (voorheen 46) Voormalige dubbel boerenwoonhuis </name>
+</wpt>
+<wpt lat="51.8630425" lon="6.002959">
+  <name>Duffeltdijk 9 Woonhuis, voormalige pastorie </name>
+</wpt>
+<wpt lat="51.8646192" lon="6.0094122">
+  <name>Duffeltdijk bij 11 Grafzerk </name>
+</wpt>
+<wpt lat="51.8638366" lon="6.0040732">
+  <name>Duffeltdijk 25 Woonhuis Natura Speculum Creatoris </name>
+</wpt>
+<wpt lat="51.8594682" lon="6.0209545">
+  <name>Eversberg 1 Boerderij Kapittelshof </name>
+</wpt>
+<wpt lat="51.862539" lon="6.0165553">
+  <name>Weverstraat 1 Boerderij Scholtenhof </name>
+</wpt>
+<wpt lat="51.8633649" lon="6.0167411">
+  <name>Weverstraat 2 Boerderij Haarenshof </name>
+</wpt>
+<wpt lat="51.8647199" lon="6.0121286">
+  <name>Weverstraat 15 Woonhuis </name>
+</wpt>
+<wpt lat="51.8642693" lon="6.0089573">
+  <name>Weverstraat 51 Woonhuis </name>
+</wpt>
+<wpt lat="51.8646044" lon="6.0084828">
+  <name>Weverstraat 60 Woonhuis </name>
+</wpt>
+<wpt lat="51.8644972" lon="6.0083507">
+  <name>Weverstraat 62 Woonhuis, dubbel met 64 </name>
+</wpt>
+<wpt lat="51.8645246" lon="6.008264">
+  <name>Weverstraat 64 Woonhuis, dubbel met 62 </name>
+</wpt>
+<wpt lat="51.8634977" lon="6.0059123">
+  <name>Weverstraat 79 Boerderij De Roeijen </name>
+</wpt>
+<wpt lat="51.8639847" lon="6.0066885">
+  <name>Weverstraat 84 Voormalige dubbele boerderij </name>
+</wpt>
+<wpt lat="51.8639847" lon="6.0066885">
+  <name>Weverstraat 84a Voormalige dubbele boerderij </name>
+</wpt>
+<wpt lat="51.8633803" lon="5.9328558">
+  <name>Erlecomsedam 2 Boerderij </name>
+</wpt>
+<wpt lat="51.8631704" lon="5.9335356">
+  <name>Erlecomsedam 4 Café, Oortjeshekken </name>
+</wpt>
+<wpt lat="51.8632763" lon="5.9339579">
+  <name>Erlecomsedam 10 Woonhuis, a/d dijk </name>
+</wpt>
+<wpt lat="51.8632227" lon="5.9377319">
+  <name>Erlecomsedam 13 Woonhuis, buitendijks </name>
+</wpt>
+<wpt lat="51.8613176" lon="5.9433559">
+  <name>Erlecomsedam 30 Woonhuis, vm bazenwoning steenfabriek Ooij </name>
+</wpt>
+<wpt lat="51.8588259" lon="5.9477572">
+  <name>Erlecomsedam 34 Schoorsteen, vm steenfabriek Ooij </name>
+</wpt>
+<wpt lat="51.858586" lon="5.9017759">
+  <name>Hezelstraat 4 Woonhuis, Tiengeboden </name>
+</wpt>
+<wpt lat="51.8585947" lon="5.9018341">
+  <name>Hezelstraat 6(-8) Woonhuis, Tiengeboden </name>
+</wpt>
+<wpt lat="51.8593343" lon="5.9253306">
+  <name>Hezelstraat 12 Woonhuis m. vm elektrische maalderij </name>
+</wpt>
+<wpt lat="51.8579946" lon="5.9293211">
+  <name>Hezelstraat 17 Woonhuis Ruimzicht </name>
+</wpt>
+<wpt lat="51.8540556" lon="5.9394051">
+  <name>Kerkdijk 1 Vm herberg/boerderij/winkel </name>
+</wpt>
+<wpt lat="51.8543651" lon="5.9385816">
+  <name>Kerkdijk 20 Woonhuis m. vm bakkerij </name>
+</wpt>
+<wpt lat="51.8542463" lon="5.9389865">
+  <name>Kerkdijk 24 Orgel in RK hubertuskerk </name>
+</wpt>
+<wpt lat="51.8521882" lon="5.9389323">
+  <name>Kerkdijk 32 Boerderij Jonkmanshof </name>
+</wpt>
+<wpt lat="51.8433668" lon="5.9529149">
+  <name>Kerkdijk 50 Boerderij, wederopbouw </name>
+</wpt>
+<wpt lat="51.8579315" lon="5.9014056">
+  <name>Ooijse Bandijk 10+12 Boerderij Grote Kat, Tien Geboden </name>
+</wpt>
+<wpt lat="51.8582181" lon="5.9016266">
+  <name>Ooijse Bandijk 14 Boerderij krukhuis-, Tien Geboden </name>
+</wpt>
+<wpt lat="51.8585418" lon="5.9016158">
+  <name>Ooijse Bandijk 16 Woonhuis, TienGeboden,hkHezelstr2 </name>
+</wpt>
+<wpt lat="51.8587813" lon="5.9016398">
+  <name>Ooijse Bandijk 18 Boerderij, Kleine Kat </name>
+</wpt>
+<wpt lat="51.8699621" lon="5.9126655">
+  <name>Ooijse Bandijk 74 Vm café-veerhuis </name>
+</wpt>
+<wpt lat="51.8698969" lon="5.9131875">
+  <name>Ooijse Bandijk 80 Woonhuis a/d dijk, dubbel m. 82 </name>
+</wpt>
+<wpt lat="51.8698785" lon="5.9132744">
+  <name>Ooijse Bandijk 82 Woonhuis a/d dijk, dubbel m. 80 </name>
+</wpt>
+<wpt lat="51.8695521" lon="5.9138949">
+  <name>Ooijse Bandijk 88 Woonhuis a/d dijk, vm dijkboerderijtje </name>
+</wpt>
+<wpt lat="51.8690102" lon="5.9144839">
+  <name>Ooijse Bandijk 90 Woonhuis a/d dijk, dubbel m. 92 </name>
+</wpt>
+<wpt lat="51.8689649" lon="5.9145559">
+  <name>Ooijse Bandijk 92 Woonhuis a/d dijk, dubbel m 90 </name>
+</wpt>
+<wpt lat="51.8683721" lon="5.9164656">
+  <name>Ooijse Bandijk 122 Woonhuis a/d dijk </name>
+</wpt>
+<wpt lat="51.8672262" lon="5.9213886">
+  <name>Ooijse Bandijk 124+126 Woonhuis a/d dijk </name>
+</wpt>
+<wpt lat="51.8671715" lon="5.9215622">
+  <name>Ooijse Bandijk 128 Woonhuis a/d dijk, Peppel </name>
+</wpt>
+<wpt lat="51.8617711" lon="5.9290327">
+  <name>Spruitenkamp 2 T-boerderij </name>
+</wpt>
+</gpx>
