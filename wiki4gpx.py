@@ -2,7 +2,8 @@
 import mechanize
 import cookielib
 import re
-plaatsnaam='Berg_en_Dal_(gemeente)'
+plaatsnaam='Wijchen_(gemeente)'
+#'Berg_en_Dal_(gemeente)'
 #'Alkmaar_(plaats)'
 #'Arnhem/Heijenoord_en_Lombok'
 #if '/' in plaatsnaam or '_' in plaatsnaam:

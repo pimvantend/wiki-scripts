@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+<wpt lat="51.8565408" lon="5.6471907">
+  <name>Aaldert 9 Krukboerderij met schuur </name>
+</wpt>
+<wpt lat="51.8565791" lon="5.6619679">
+  <name>De Horst 2 T-boerderij op terp </name>
+</wpt>
+<wpt lat="51.8508076" lon="5.6623680">
+  <name>Dorpsstraat 14 Voorm. Gemeentehuis (villa) + schuurtje </name>
+</wpt>
+<wpt lat="51.8504538" lon="5.6637447">
+  <name>Dorpsstraat 20 Krukboerderij met schuur </name>
+</wpt>
+<wpt lat="51.8510169" lon="5.6650835">
+  <name>Dorpsstraat 36 T-boerderij op terp </name>
+</wpt>
+<wpt lat="51.8509628" lon="5.6651847">
+  <name>Dorpsstraat 38 T-boerderij op terp </name>
+</wpt>
+<wpt lat="51.8502719" lon="5.6646580">
+  <name>Dorpsstraat 24 Voorm. Klooster </name>
+</wpt>
+<wpt lat="51.8502541" lon="5.6645852">
+  <name>Dorpsstraat 26 Voorm. Klooster </name>
+</wpt>
+<wpt lat="51.8502182" lon="5.6644979">
+  <name>Dorpsstraat 28 Voorm. Klooster </name>
+</wpt>
+<wpt lat="51.8501647" lon="5.6643669">
+  <name>Dorpsstraat 30 Voorm. Bewaarschool bij klooster </name>
+</wpt>
+<wpt lat="51.8503576" lon="5.6664001">
+  <name>Dorpsstraat 53 Woningwetwoning </name>
+</wpt>
+<wpt lat="51.8319391" lon="5.6816641">
+  <name>Dorpsstraat 55 Woningwetwoning </name>
+</wpt>
+<wpt lat="51.8629618" lon="5.6614988">
+  <name>Elzendweg 29 Halleboerderij </name>
+</wpt>
+<wpt lat="51.8464426" lon="5.6450571">
+  <name>Oude Schaarsestraat 1 Boerderij met schuur "De Schaarse Hof" </name>
+</wpt>
+<wpt lat="51.8495673" lon="5.6623170">
+  <name>Uilengat 5 Krukboerderij </name>
+</wpt>
+<wpt lat="51.8476285" lon="5.6650045">
+  <name>Veldsestraat 5 T-boerderij "De Hoge Hof" </name>
+</wpt>
+<wpt lat="51.8480296" lon="5.6664147">
+  <name>Veldsestraat 6 T-boerderij "De Kraayenhof" </name>
+</wpt>
+<wpt lat="51.8227411" lon="5.6277479">
+  <name>Grootestraat 2 U-vormig boerderijcomplex </name>
+</wpt>
+<wpt lat="51.822705" lon="5.6277912">
+  <name>Grootestraat 2 A U-vormig boerderijcomplex </name>
+</wpt>
+<wpt lat="51.8228246" lon="5.6283707">
+  <name>Grootestraat 5 Woonhuis </name>
+</wpt>
+<wpt lat="51.8230085" lon="5.6288372">
+  <name>Grootestraat 11 (voorm. Pastorie) nu woonhuis. En de kastanjeboom </name>
+</wpt>
+<wpt lat="51.8229905" lon="5.6288660">
+  <name>Grootestraat 11 A (voorm. Pastorie) nu woonhuis. En de kastanjeboom </name>
+</wpt>
+<wpt lat="51.8225146" lon="5.6286169">
+  <name>Grootestraat 14 Stadswoning </name>
+</wpt>
+<wpt lat="51.8224422" lon="5.6288630">
+  <name>Grootestraat 18 Woonhuis </name>
+</wpt>
+<wpt lat="51.8222978" lon="5.6291380">
+  <name>Grootestraat 22 Woonhuis </name>
+</wpt>
+<wpt lat="51.8221332" lon="5.6304714">
+  <name>Grootestraat 31 Woonhuis </name>
+</wpt>
+<wpt lat="51.8221141" lon="5.6301095">
+  <name>Grootestraat 36 Woonhuis </name>
+</wpt>
+<wpt lat="51.8220081" lon="5.6301516">
+  <name>Grootestraat 38 Woonhuis (voorm. Postkantoor) </name>
+</wpt>
+<wpt lat="51.82199" lon="5.6301806">
+  <name>Grootestraat 38 A Dwarshuis </name>
+</wpt>
+<wpt lat="51.8219846" lon="5.6304482">
+  <name>Grootestraat 40 Dwarshuis </name>
+</wpt>
+<wpt lat="51.8263642" lon="5.6359921">
+  <name>Hoefweg 5 Hallehuis met middenlangsdeel </name>
+</wpt>
+<wpt lat="51.8259755" lon="5.6370342">
+  <name>Hoefweg 7 T-boerderij "Vreugdenhof" </name>
+</wpt>
+<wpt lat="51.8259755" lon="5.6370342">
+  <name>Hoefweg 7 Grote vrijstaande veeschuur </name>
+</wpt>
+<wpt lat="51.8233056" lon="5.6329290">
+  <name>Kasteelse Allee 1 Boerderij inclusief schuren "Bloemhof" </name>
+</wpt>
+<wpt lat="51.8232852" lon="5.6297379">
+  <name>Kerkstraat 7 T-boerderij, nu woonhuis </name>
+</wpt>
+<wpt lat="51.8126978" lon="5.6580893">
+  <name>Liendensedijk 5 T-boerderij </name>
+</wpt>
+<wpt lat="51.8126022" lon="5.6643533">
+  <name>Liendensestraat 9 Boerderijcomplex (woonhuis + twee schuren) </name>
+</wpt>
+<wpt lat="51.8245203" lon="5.6235798">
+  <name>Maasdijk 5 Landarbeiderswoning, tegen de dijk </name>
+</wpt>
+<wpt lat="51.8233713" lon="5.6315806">
+  <name>Molendijk 9 L-vormig woonhuis "Sluishoofd" </name>
+</wpt>
+<wpt lat="51.8217212" lon="5.6298021">
+  <name>Parallelweg 1 A U-vormig boerderijcomplex </name>
+</wpt>
+<wpt lat="51.8221494" lon="5.6269469">
+  <name>Ringdijk 4 Halleboerderij (vroeger nog café geweest) </name>
+</wpt>
+<wpt lat="51.8322917" lon="5.6116226">
+  <name>Wethouder Bankenstraat 10 Boerderij met bakhuisje </name>
+</wpt>
+<wpt lat="51.7966862" lon="5.7219800">
+  <name>Balgoijseweg 72 T-boerderij </name>
+</wpt>
+<wpt lat="51.8102951" lon="5.7280845">
+  <name>Baron d'Osystraat 28 voorm. Smederij met werkplaats </name>
+</wpt>
+<wpt lat="51.8063637" lon="5.7260341">
+  <name>Elckerlycweg 1 Dorpswoning </name>
+</wpt>
+<wpt lat="51.808682" lon="5.7232871">
+  <name>Herenstraat 7 Voorm. Kerkgebouw "De Huttenkamp" </name>
+</wpt>
+<wpt lat="51.8133625" lon="5.7146210">
+  <name>Homberg 2990 halleboerderij + bakhuis </name>
+</wpt>
+<wpt lat="51.7966535" lon="5.7422457">
+  <name>Huurlingsedam 16 T-boerderij met erf </name>
+</wpt>
+<wpt lat="51.8124407" lon="5.7585248">
+  <name>Industriepark 8 Voorm. Ambachtschool, nu bedrijfshal </name>
+</wpt>
+<wpt lat="51.8153751" lon="5.6950140">
+  <name>Leurseweg 10 Boerderij "De Hagert" </name>
+</wpt>
+<wpt lat="51.806148" lon="5.7323159">
+  <name>Lijsterbesstraat 2 Voorm. ULO-school </name>
+</wpt>
+<wpt lat="51.8068672" lon="5.7261011">
+  <name>Markt 17 Woonhuis </name>
+</wpt>
+<wpt lat="51.80684" lon="5.7261733">
+  <name>Markt 18 Winkel/woonhuis </name>
+</wpt>
+<wpt lat="51.8068039" lon="5.7262456">
+  <name>Markt 19 vm. Café-restaurant, nu winkel </name>
+</wpt>
+<wpt lat="51.8073449" lon="5.7225088">
+  <name>Oud Ravensteinseweg 3 Burgerwoning Tuinmanswoning kloosterTienakker </name>
+</wpt>
+<wpt lat="51.8072931" lon="5.7217689">
+  <name>Oud Ravensteinseweg 15 Voorm. Burgemeesterswoning + prieeltje </name>
+</wpt>
+<wpt lat="51.8122838" lon="5.7241696">
+  <name>Passedwarsstraat 6 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8122661" lon="5.7240679">
+  <name>Passedwarsstraat 8 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8122216" lon="5.7239372">
+  <name>Passedwarsstraat 10 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8122128" lon="5.7238646">
+  <name>Passedwarsstraat 12 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8121528" lon="5.7237317">
+  <name>Passedwarsstraat 14 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8121504" lon="5.7236465">
+  <name>Passedwarsstraat 16 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.812124" lon="5.7235014">
+  <name>Passedwarsstraat 18 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8121062" lon="5.7234287">
+  <name>Passedwarsstraat 20 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8120498" lon="5.7242983">
+  <name>Passedwarsstraat 49 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8120319" lon="5.7242257">
+  <name>Passedwarsstraat 51 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8119965" lon="5.7240805">
+  <name>Passedwarsstraat 53 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8119787" lon="5.7240079">
+  <name>Passedwarsstraat 55 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8119342" lon="5.7238479">
+  <name>Passedwarsstraat 57 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8119254" lon="5.7237754">
+  <name>Passedwarsstraat 59 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8118987" lon="5.7236447">
+  <name>Passedwarsstraat 61 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.811872" lon="5.7235865">
+  <name>Passedwarsstraat 63 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8118366" lon="5.7234123">
+  <name>Passedwarsstraat 65 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8118367" lon="5.7233542">
+  <name>Passedwarsstraat 67 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8115456" lon="5.7245847">
+  <name>Passeweg 43 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8115995" lon="5.7245996">
+  <name>Passeweg 45 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8116983" lon="5.7246003">
+  <name>Passeweg 47 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8117522" lon="5.7245861">
+  <name>Passeweg 49 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8118511" lon="5.7246015">
+  <name>Passeweg 51 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.811896" lon="5.7246162">
+  <name>Passeweg 53 Woningcomplex huurwoningen (van Talis) </name>
+</wpt>
+<wpt lat="51.8060722" lon="5.7275015">
+  <name>Renbaan 3 T-boerderij, nu kantoorruimten </name>
+</wpt>
+<wpt lat="51.8060541" lon="5.7275305">
+  <name>Renbaan 5 T-boerderij, nu kantoorruimten </name>
+</wpt>
+<wpt lat="51.8103669" lon="5.7280995">
+  <name>Teersmortelweg 4 Woning </name>
+</wpt>
+<wpt lat="51.8103986" lon="5.7280952">
+  <name>Teersmortelweg 4 A Woning </name>
+</wpt>
+<wpt lat="51.8059681" lon="5.7237278">
+  <name>Tienakker 1 Kapel van de Zusters Franciscanessen </name>
+</wpt>
+<wpt lat="51.8059682" lon="5.7237176">
+  <name>Tienakker 2 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8059682" lon="5.7237075">
+  <name>Tienakker 3 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8059683" lon="5.7236973">
+  <name>Tienakker 4 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8059683" lon="5.7236871">
+  <name>Tienakker 5 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8059684" lon="5.7236769">
+  <name>Tienakker 6 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8059684" lon="5.7236669">
+  <name>Tienakker 7 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8061310" lon="5.7228404">
+  <name>Tienakker 45 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8061854" lon="5.7227900">
+  <name>Tienakker 46 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8062406" lon="5.7227530">
+  <name>Tienakker 47 Kloostergebouw (oorspr. van Franciscanessen) "De Tienakker" </name>
+</wpt>
+<wpt lat="51.8063034" lon="5.7227410">
+  <name>Tienakker 48 Voorm. Boerderij </name>
+</wpt>
+<wpt lat="51.806363" lon="5.7227424">
+  <name>Tienakker 49 Voorm. Boerderij </name>
+</wpt>
+<wpt lat="51.8064227" lon="5.7227437">
+  <name>Tienakker 50 Voorm. Boerderij </name>
+</wpt>
+<wpt lat="51.8110793" lon="5.7273073">
+  <name>Tunnelweg 5 Villa "Villa Mes" </name>
+</wpt>
+<wpt lat="51.7973496" lon="5.7064592">
+  <name>Vormersesluisweg 3 Boerderij, waterput, kippenhok en erf "De Klispoel" </name>
+</wpt>
+<wpt lat="51.7967674" lon="5.7218502">
+  <name>Vormerseweg 64 T-boerderij </name>
+</wpt>
+</gpx>
