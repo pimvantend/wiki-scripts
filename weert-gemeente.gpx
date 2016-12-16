@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+<wpt lat="51.2205089" lon="5.6797311">
+  <name>Bocholterweg 112 Heilig Hart van Jezuskerk, vrijstaande kruiskerk </name>
+</wpt>
+<wpt lat="51.1980433" lon="5.7143534">
+  <name>Bergerothweg 52 Boerderij </name>
+</wpt>
+<wpt lat="51.1980152" lon="5.733367">
+  <name>Ellerweg 1 Langgevelboerderij </name>
+</wpt>
+<wpt lat="51.1920825" lon="5.7242385">
+  <name>Frans Strouxstraat 6 Woonhuis </name>
+</wpt>
+<wpt lat="51.1839905" lon="5.6992356">
+  <name>Grensweg 2 Boerderij </name>
+</wpt>
+<wpt lat="51.1917669" lon="5.7214468">
+  <name>Horsterweg 9 Boerderij </name>
+</wpt>
+<wpt lat="51.1890959" lon="5.7280787">
+  <name>Houtbroek 4 Boerderij </name>
+</wpt>
+<wpt lat="51.1937049" lon="5.7242876">
+  <name>Julianalaan 4 Hoekwoning </name>
+</wpt>
+<wpt lat="51.1946231" lon="5.7222544">
+  <name>Julianastraat 27 Herenhuis (oude kapelanie) </name>
+</wpt>
+<wpt lat="51.1890975" lon="5.6953367">
+  <name>Kapelstraat 7 Boerderij </name>
+</wpt>
+<wpt lat="51.1897259" lon="5.6956556">
+  <name>Kapelstraat 8 Heyerkapel </name>
+</wpt>
+<wpt lat="51.1896101" lon="5.6952686">
+  <name>Kapelstraat 9 Boerderij, m.u.v. losstaand bijgebouw </name>
+</wpt>
+<wpt lat="51.1948522" lon="5.7265827">
+  <name>Kroonstraat - Wilhelminastraat Straatbeeld </name>
+</wpt>
+<wpt lat="51.1966475" lon="5.7338288">
+  <name>Molenweg 18 Boerderij </name>
+</wpt>
+<wpt lat="51.1893381" lon="5.7189402">
+  <name>Neelestraat 3a Boerderij </name>
+</wpt>
+<wpt lat="51.193853" lon="5.71491">
+  <name>Veldstraat 45 Boerderij </name>
+</wpt>
+<wpt lat="51.1946813" lon="5.7146576">
+  <name>Veldstraat 52 Boerderij </name>
+</wpt>
+<wpt lat="51.1970915" lon="5.7234456">
+  <name>Wilhelminastraat 7 Woonhuis </name>
+</wpt>
+<wpt lat="51.1970283" lon="5.7235453">
+  <name>Wilhelminastraat 9 Woonhuis </name>
+</wpt>
+<wpt lat="51.1966871" lon="5.7234283">
+  <name>Wilhelminastraat 20 -22 Kantoor woonhuis </name>
+</wpt>
+<wpt lat="51.1955394" lon="5.7255372">
+  <name>Wilhelminastraat 23 Woonhuis </name>
+</wpt>
+<wpt lat="51.2323532" lon="5.778512">
+  <name>Coolenstraat 34 Heilige Maagdenkapel </name>
+</wpt>
+<wpt lat="51.2296794" lon="5.7716744">
+  <name>Ittervoorterweg 68 Corneliuskerk, vrijstaande kruiskerk </name>
+</wpt>
+<wpt lat="51.225137" lon="5.775387">
+  <name>Ittervoorterweg bij 104 Boerderij </name>
+</wpt>
+<wpt lat="51.226819" lon="5.775349">
+  <name>Ittervoorterweg - Hennestraatje Veldkruis </name>
+</wpt>
+<wpt lat="51.233662" lon="5.769786">
+  <name>Ittervoorterweg - Kremersweg Veldkruis </name>
+</wpt>
+<wpt lat="51.2101598" lon="5.73011">
+  <name>Truppertstraat 30 Schuur </name>
+</wpt>
+<wpt lat="51.2093938" lon="5.732854">
+  <name>Truppertstraat 40 Bakhuis </name>
+</wpt>
+<wpt lat="51.211269" lon="5.7258393">
+  <name>Tungeler Dorpsstraat 26 Voormalige pastorie </name>
+</wpt>
+<wpt lat="51.2116705" lon="5.7278641">
+  <name>Tungeler Dorpsstraat 40 Onze-Lieve-Vrouw van Altijddurende Bijstandkapel </name>
+</wpt>
+<wpt lat="51.2106651" lon="5.7170194">
+  <name>Tuurkesweg 10 Boerderij </name>
+</wpt>
+<wpt lat="51.2099644" lon="5.7168713">
+  <name>Tuurkesweg 12 Bakhuis </name>
+</wpt>
+<wpt lat="51.2098602" lon="5.7155682">
+  <name>Wallenweg 1 Boerderij </name>
+</wpt>
+<wpt lat="51.2570645" lon="5.7044465">
+  <name>Bassin 16 Woning </name>
+</wpt>
+<wpt lat="51.254597" lon="5.7061197">
+  <name>Beekstraat 13 Horeca / woning </name>
+</wpt>
+<wpt lat="51.2559021" lon="5.7054842">
+  <name>Beekstraat 55 Woonhuis </name>
+</wpt>
+<wpt lat="51.2532997" lon="5.7079305">
+  <name>Begijnensteeg Tuinmuur / steeg </name>
+</wpt>
+<wpt lat="51.2527777" lon="5.7106621">
+  <name>Begijnenhofstraat 1 t/m 11  </name>
+</wpt>
+<wpt lat="51.2560436" lon="5.7095821">
+  <name>Biest 2 Woonhuis in traditionalisme stijl </name>
+</wpt>
+<wpt lat="51.2561778" lon="5.7097979">
+  <name>Biest 4  </name>
+</wpt>
+<wpt lat="51.2562226" lon="5.7098556">
+  <name>Biest 6  </name>
+</wpt>
+<wpt lat="51.257555" lon="5.7111754">
+  <name>Biest 13  </name>
+</wpt>
+<wpt lat="51.2565812" lon="5.7102019">
+  <name>Biest 14a  </name>
+</wpt>
+<wpt lat="51.2576081" lon="5.7112909">
+  <name>Biest 15  </name>
+</wpt>
+<wpt lat="51.2576751" lon="5.7113497">
+  <name>Biest 17  </name>
+</wpt>
+<wpt lat="51.2577732" lon="5.7114853">
+  <name>Biest 19  </name>
+</wpt>
+<wpt lat="51.2578358" lon="5.711586">
+  <name>Biest 21  </name>
+</wpt>
+<wpt lat="51.2578715" lon="5.7116579">
+  <name>Biest 23  </name>
+</wpt>
+<wpt lat="51.2580506" lon="5.7119027">
+  <name>Biest 27  </name>
+</wpt>
+<wpt lat="51.2582373" lon="5.7122105">
+  <name>Biest 35, 35b-c Dubbel woonhuis </name>
+</wpt>
+<wpt lat="51.2573598" lon="5.7114394">
+  <name>Biest 48  </name>
+</wpt>
+<wpt lat="51.2574135" lon="5.7115257">
+  <name>Biest 50  </name>
+</wpt>
+<wpt lat="51.2574868" lon="5.7115942">
+  <name>Biest 52  </name>
+</wpt>
+<wpt lat="51.2600251" lon="5.7134743">
+  <name>Biest 53  </name>
+</wpt>
+<wpt lat="51.2576037" lon="5.711832">
+  <name>Biest 56 Woonhuis </name>
+</wpt>
+<wpt lat="51.2580945" lon="5.7124702">
+  <name>Biest 66  </name>
+</wpt>
+<wpt lat="51.2581207" lon="5.7125765">
+  <name>Biest 68  </name>
+</wpt>
+<wpt lat="51.258174" lon="5.7127774">
+  <name>Biest 70  </name>
+</wpt>
+<wpt lat="51.2582296" lon="5.7125785">
+  <name>Biest 72  </name>
+</wpt>
+<wpt lat="51.258273" lon="5.7127351">
+  <name>Biest 74  </name>
+</wpt>
+<wpt lat="51.2584703" lon="5.7129084">
+  <name>Biest 80 Horeca </name>
+</wpt>
+<wpt lat="51.2600754" lon="5.7137185">
+  <name>Biest 112  </name>
+</wpt>
+<wpt lat="51.2601844" lon="5.7139092">
+  <name>Biest 112a  </name>
+</wpt>
+<wpt lat="51.258496" lon="5.6475796">
+  <name>Blaakvenweg - Geuzendijk Veldkruis </name>
+</wpt>
+<wpt lat="51.2476376" lon="5.7044424">
+  <name>Bonesmolen 2 Romp Boonesmolen </name>
+</wpt>
+<wpt lat="51.238302" lon="5.7533671">
+  <name>Breijbaan 38 Bakhuis </name>
+</wpt>
+<wpt lat="51.2533331" lon="5.7003394">
+  <name>Coenraad Abelsstraat 17 t/m 25  </name>
+</wpt>
+<wpt lat="51.2526587" lon="5.6995377">
+  <name>Coenraad Abelsstraat 31 a OLV van Fatimakerk </name>
+</wpt>
+<wpt lat="51.252818" lon="5.6991745">
+  <name>Coenraad Abelsstraat 36 b Paterskapel / moskee </name>
+</wpt>
+<wpt lat="51.2299745" lon="5.707108">
+  <name>Dijkerakkerweg 5 Voormalige boerderij </name>
+</wpt>
+<wpt lat="51.2305626" lon="5.6988655">
+  <name>Dijkerstraat 34 Boerderij </name>
+</wpt>
+<wpt lat="51.2306567" lon="5.6972626">
+  <name>Dijkerstraat 36 Boerderij </name>
+</wpt>
+<wpt lat="51.2309305" lon="5.6957182">
+  <name>Dijkerstraat 40 Boerderij </name>
+</wpt>
+<wpt lat="51.2310191" lon="5.6947074">
+  <name>Dijkerstraat 42 Boerderij </name>
+</wpt>
+<wpt lat="51.2167728" lon="5.7540044">
+  <name>Dupesweg 1 Bakhuis </name>
+</wpt>
+<wpt lat="51.2690465" lon="5.6805141">
+  <name>Eindhovenseweg 130 Zuidwestelijke zijgevel boerderij </name>
+</wpt>
+<wpt lat="51.2690465" lon="5.6805141">
+  <name>Eindhovenseweg 130 Bakhuis </name>
+</wpt>
+<wpt lat="51.2528688" lon="5.709565">
+  <name>Emmasingel 12 Voorm. brouwerij </name>
+</wpt>
+<wpt lat="51.2517047" lon="5.7082639">
+  <name>Emmasingel 32 "Walburg" </name>
+</wpt>
+<wpt lat="51.2534723" lon="5.7099822">
+  <name>Emmasingel 37 St. Martinusschool </name>
+</wpt>
+<wpt lat="51.2513669" lon="5.7071731">
+  <name>Emmasingel 40 Woonhuis </name>
+</wpt>
+<wpt lat="51.2519626" lon="5.7097487">
+  <name>Emmasingel 55 Kantoor / woning </name>
+</wpt>
+<wpt lat="51.251792" lon="5.7095522">
+  <name>Emmasingel 57 Woonhuis </name>
+</wpt>
+<wpt lat="51.2517382" lon="5.7094802">
+  <name>Emmasingel 59 Woonhuis </name>
+</wpt>
+<wpt lat="51.2510513" lon="5.707599">
+  <name>Emmasingel 85 Villa </name>
+</wpt>
+<wpt lat="51.2509363" lon="5.7069107">
+  <name>Emmasingel 93 Woonhuis met praktijk </name>
+</wpt>
+<wpt lat="51.2285815" lon="5.706769">
+  <name>Grootvenweg 1 Boerderij </name>
+</wpt>
+<wpt lat="51.2712664" lon="5.7175134">
+  <name>Heerweg 17 Veldkruis </name>
+</wpt>
+<wpt lat="51.2544874" lon="5.7067492">
+  <name>Hegstraat 4 Bedrijfspand </name>
+</wpt>
+<wpt lat="51.2546167" lon="5.7074719">
+  <name>Hoogstraat 15 Woning / praktijkruimte </name>
+</wpt>
+<wpt lat="51.2548259" lon="5.7078546">
+  <name>Hoogstraat 22 Woonhuis </name>
+</wpt>
+<wpt lat="51.2548528" lon="5.7078834">
+  <name>Hoogstraat 24 28 Woonhuis </name>
+</wpt>
+<wpt lat="51.255012" lon="5.7079557">
+  <name>Hoogstraat 27 Woonhuis </name>
+</wpt>
+<wpt lat="51.2549135" lon="5.7079673">
+  <name>Hoogstraat 28 32 Winkel / woning </name>
+</wpt>
+<wpt lat="51.255094" lon="5.7080539">
+  <name>Hoogstraat 29 Winkel / woning </name>
+</wpt>
+<wpt lat="51.257531" lon="5.6788878">
+  <name>Hulsterdijk 10 Boerderij </name>
+</wpt>
+<wpt lat="51.2653052" lon="5.6917519">
+  <name>Hushoverweg 77b Boerderij </name>
+</wpt>
+<wpt lat="51.211276" lon="5.7326085">
+  <name>Jean Amentstraat 15 Boerderij </name>
+</wpt>
+<wpt lat="51.2077943" lon="5.723026">
+  <name>Kerkveldweg - Molensteeg Veldkruis </name>
+</wpt>
+<wpt lat="51.2539564" lon="5.7069604">
+  <name>Korenmarkt 3 - 3a Kantoor / woning </name>
+</wpt>
+<wpt lat="51.2507941" lon="5.706174">
+  <name>Langpoort 1 Kantoor / wonig </name>
+</wpt>
+<wpt lat="51.2531132" lon="5.7063386">
+  <name>Langstraat 4 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2530065" lon="5.7072909">
+  <name>Langstraat 9 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2522051" lon="5.7064182">
+  <name>Langstraat 19 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2516129" lon="5.7060273">
+  <name>Langstraat 41 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2513625" lon="5.7055816">
+  <name>Langstraat 46 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2513887" lon="5.7058396">
+  <name>Langstraat 47 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2513087" lon="5.7055096">
+  <name>Langstraat 48 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2513349" lon="5.7057962">
+  <name>Langstraat 49/49a Winkel / woning </name>
+</wpt>
+<wpt lat="51.2522879" lon="5.6783155">
+  <name>Lutenakkersteeg 2 Bakhuis </name>
+</wpt>
+<wpt lat="51.2525687" lon="5.6774579">
+  <name>Lutenakkersteeg 3 Boerderij </name>
+</wpt>
+<wpt lat="51.2340407" lon="5.7212053">
+  <name>Maaseikerweg 200 Boerderij </name>
+</wpt>
+<wpt lat="51.264227" lon="5.7017023">
+  <name>Maasenweg 6 Boerderij en schuur </name>
+</wpt>
+<wpt lat="51.2520157" lon="5.7098975">
+  <name>Maaspoort 2 Winkel / wonig </name>
+</wpt>
+<wpt lat="51.2518697" lon="5.7109306">
+  <name>Maaspoort 17 Winkel / woning </name>
+</wpt>
+<wpt lat="51.251773" lon="5.7107204">
+  <name>Maaspoort 18 - 20 Kantoor/woningen </name>
+</wpt>
+<wpt lat="51.2518154" lon="5.7111115">
+  <name>Maaspoort 19 Winkel / woning </name>
+</wpt>
+<wpt lat="51.251612" lon="5.7112788">
+  <name>Maaspoort 24 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2514628" lon="5.7115695">
+  <name>Maaspoort 30 Ned. Hervormde Bethelkerk </name>
+</wpt>
+<wpt lat="51.2531049" lon="5.7065625">
+  <name>Maasstraat 2 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2531491" lon="5.7068837">
+  <name>Maasstraat 3 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2530914" lon="5.7067993">
+  <name>Maasstraat 4 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2530041" lon="5.7072966">
+  <name>Maasstraat 9 Woning </name>
+</wpt>
+<wpt lat="51.2529235" lon="5.7075241">
+  <name>Maasstraat 11 Woning </name>
+</wpt>
+<wpt lat="51.2528985" lon="5.707594">
+  <name>Maasstraat 13 Woning </name>
+</wpt>
+<wpt lat="51.2528587" lon="5.7073538">
+  <name>Maasstraat 14 Kantoor / woning </name>
+</wpt>
+<wpt lat="51.2528489" lon="5.7077828">
+  <name>Maasstraat 15 Pastorie </name>
+</wpt>
+<wpt lat="51.2527901" lon="5.7076565">
+  <name>Maasstraat 18 Vm. woonhuis </name>
+</wpt>
+<wpt lat="51.252632" lon="5.7080827">
+  <name>Maasstraat 26 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2523437" lon="5.7093039">
+  <name>Maasstraat 27 Schuur </name>
+</wpt>
+<wpt lat="51.2525971" lon="5.7083338">
+  <name>Maasstraat 28 Kantoor / woning </name>
+</wpt>
+<wpt lat="51.2521388" lon="5.7094595">
+  <name>Maasstraat 46 Horeca / woning </name>
+</wpt>
+<wpt lat="51.2541041" lon="5.7063758">
+  <name>Markt 17 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2542123" lon="5.7067229">
+  <name>Markt 21 Horeca / woning </name>
+</wpt>
+<wpt lat="51.2540936" lon="5.7061019">
+  <name>Muntpromenade 2 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2549774" lon="5.7083427">
+  <name>Oelemarkt 4 Horeca / woning </name>
+</wpt>
+<wpt lat="51.2553668" lon="5.7082996">
+  <name>Oelemarkt 9 Horeca / woning </name>
+</wpt>
+<wpt lat="51.2554177" lon="5.7085118">
+  <name>Oelemarkt 12 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2556486" lon="5.7084596">
+  <name>Oelemarkt 13 Horeca / woning </name>
+</wpt>
+<wpt lat="51.2557321" lon="5.7084483">
+  <name>Oelemarkt 15 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2559673" lon="5.708366">
+  <name>Oelemarkt 17 Horeca / woning </name>
+</wpt>
+<wpt lat="51.2557223" lon="5.708749">
+  <name>Oelemarkt 22 Winkel / woning </name>
+</wpt>
+<wpt lat="51.2533621" lon="5.7073716">
+  <name>Oudkerkhof Straatwand </name>
+</wpt>
+<wpt lat="51.251932" lon="5.7076624">
+  <name>Paradijsstraatje 47-49 Voorm. pakhuis </name>
+</wpt>
+<wpt lat="51.2579852" lon="5.7095671">
+  <name>Recollectenstraat 5- 5a Museum </name>
+</wpt>
+<wpt lat="51.2473966" lon="5.7463008">
+  <name>Roermondseweg 149 Boerderij </name>
+</wpt>
+<wpt lat="51.247351" lon="5.7465153">
+  <name>Roermondseweg 151 Woonhuis </name>
+</wpt>
+<wpt lat="51.2720812" lon="5.70574">
+  <name>Schonkenstraat 3 Voormalige boerderij </name>
+</wpt>
+<wpt lat="51.2545459" lon="5.7083861">
+  <name>Schoolstraat 10 Woonhuis </name>
+</wpt>
+<wpt lat="51.2548717" lon="5.7084173">
+  <name>Schoolstraat 18 Woonhuis </name>
+</wpt>
+<wpt lat="51.254887" lon="5.708514">
+  <name>Schoolstraat 20 Voormalige stadsboerderij </name>
+</wpt>
+<wpt lat="51.2512202" lon="5.7082877">
+  <name>Sint Hieronymusstraat 1 Woonhuis </name>
+</wpt>
+<wpt lat="52.1824493" lon="6.1426339">
+  <name>Stationsplein 1, 3 en 5 Horeca / kantoor / woningen </name>
+</wpt>
+<wpt lat="51.2504831" lon="5.7050168">
+  <name>Stationsstraat 7 Vm hotel </name>
+</wpt>
+<wpt lat="51.2499015" lon="5.7041394">
+  <name>Stationsstraat 20 Horeca / woning </name>
+</wpt>
+<wpt lat="51.2525002" lon="5.7069932">
+  <name>Walburgpassage 50 Woning (Pandje Poell) </name>
+</wpt>
+<wpt lat="51.2513085" lon="5.704784">
+  <name>Wilhelminasingel 10 Postkantoor </name>
+</wpt>
+<wpt lat="51.2563814" lon="5.7044131">
+  <name>Wilhelminasingel 276 Horeca </name>
+</wpt>
+</gpx>
