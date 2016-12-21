@@ -7,57 +7,6 @@
  xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
-<wpt lat="51.8565408" lon="5.6471907">
-  <name>Aaldert 9 Krukboerderij met schuur </name>
-</wpt>
-<wpt lat="51.8565791" lon="5.6619679">
-  <name>De Horst 2 T-boerderij op terp </name>
-</wpt>
-<wpt lat="51.8508076" lon="5.6623680">
-  <name>Dorpsstraat 14 Voorm. Gemeentehuis (villa) + schuurtje </name>
-</wpt>
-<wpt lat="51.8504538" lon="5.6637447">
-  <name>Dorpsstraat 20 Krukboerderij met schuur </name>
-</wpt>
-<wpt lat="51.8510169" lon="5.6650835">
-  <name>Dorpsstraat 36 T-boerderij op terp </name>
-</wpt>
-<wpt lat="51.8509628" lon="5.6651847">
-  <name>Dorpsstraat 38 T-boerderij op terp </name>
-</wpt>
-<wpt lat="51.8502719" lon="5.6646580">
-  <name>Dorpsstraat 24 Voorm. Klooster </name>
-</wpt>
-<wpt lat="51.8502541" lon="5.6645852">
-  <name>Dorpsstraat 26 Voorm. Klooster </name>
-</wpt>
-<wpt lat="51.8502182" lon="5.6644979">
-  <name>Dorpsstraat 28 Voorm. Klooster </name>
-</wpt>
-<wpt lat="51.8501647" lon="5.6643669">
-  <name>Dorpsstraat 30 Voorm. Bewaarschool bij klooster </name>
-</wpt>
-<wpt lat="51.8503576" lon="5.6664001">
-  <name>Dorpsstraat 53 Woningwetwoning </name>
-</wpt>
-<wpt lat="51.8319391" lon="5.6816641">
-  <name>Dorpsstraat 55 Woningwetwoning </name>
-</wpt>
-<wpt lat="51.8629618" lon="5.6614988">
-  <name>Elzendweg 29 Halleboerderij </name>
-</wpt>
-<wpt lat="51.8464426" lon="5.6450571">
-  <name>Oude Schaarsestraat 1 Boerderij met schuur "De Schaarse Hof" </name>
-</wpt>
-<wpt lat="51.8495673" lon="5.6623170">
-  <name>Uilengat 5 Krukboerderij </name>
-</wpt>
-<wpt lat="51.8476285" lon="5.6650045">
-  <name>Veldsestraat 5 T-boerderij "De Hoge Hof" </name>
-</wpt>
-<wpt lat="51.8480296" lon="5.6664147">
-  <name>Veldsestraat 6 T-boerderij "De Kraayenhof" </name>
-</wpt>
 <wpt lat="51.8227411" lon="5.6277479">
   <name>Grootestraat 2 U-vormig boerderijcomplex </name>
 </wpt>
@@ -153,9 +102,6 @@
 </wpt>
 <wpt lat="51.8124407" lon="5.7585248">
   <name>Industriepark 8 Voorm. Ambachtschool, nu bedrijfshal </name>
-</wpt>
-<wpt lat="51.8153751" lon="5.6950140">
-  <name>Leurseweg 10 Boerderij "De Hagert" </name>
 </wpt>
 <wpt lat="51.806148" lon="5.7323159">
   <name>Lijsterbesstraat 2 Voorm. ULO-school </name>
