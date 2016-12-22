@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+<wpt lat="51.6678071" lon="5.9422769">
+  <name>Boxmeerseweg 2b  </name>
+</wpt>
+<wpt lat="51.6730951" lon="5.9398264">
+  <name>Boxmeerseweg 54  </name>
+</wpt>
+<wpt lat="51.6738394" lon="5.9382884">
+  <name>Dorpsstraat 9  </name>
+</wpt>
+<wpt lat="51.6720485" lon="5.9463335">
+  <name>Dijkstraat 5  </name>
+</wpt>
+<wpt lat="51.6659146" lon="5.9298949">
+  <name>Hoge Startwijk 3  </name>
+</wpt>
+<wpt lat="51.6608923" lon="5.9293723">
+  <name>Hoge Startwijk 15  </name>
+</wpt>
+<wpt lat="51.6739243" lon="5.9393449">
+  <name>Kerkplein 3 Kerk </name>
+</wpt>
+<wpt lat="51.6742089" lon="5.9399989">
+  <name>Kerkplein 5 Pastorie </name>
+</wpt>
+<wpt lat="51.6746641" lon="5.9406695">
+  <name>Kerkplein 9  </name>
+</wpt>
+<wpt lat="51.6772851" lon="5.9376365">
+  <name>Oefeltseweg 21  </name>
+</wpt>
+<wpt lat="51.6741298" lon="5.9396077">
+  <name>Kerkplein 8  </name>
+</wpt>
+<wpt lat="51.653083" lon="5.943079">
+  <name>Beugenseweg 47  </name>
+</wpt>
+<wpt lat="51.644888" lon="5.952478">
+  <name>Carmelietenstraat Oost 22  </name>
+</wpt>
+<wpt lat="51.648365" lon="5.954906">
+  <name>Van Coothstraat 16  </name>
+</wpt>
+<wpt lat="51.647987" lon="5.955591">
+  <name>Van Coothstraat 32  </name>
+</wpt>
+<wpt lat="51.646984" lon="5.957081">
+  <name>Van Coothstraat 44  </name>
+</wpt>
+<wpt lat="51.646255" lon="5.954200">
+  <name>hoek Steenstraat/Van Sasse van IJsseltstraat Pomp </name>
+</wpt>
+<wpt lat="51.647835" lon="5.953559">
+  <name>Kerkpad 2a  </name>
+</wpt>
+<wpt lat="51.645490" lon="5.956253">
+  <name>Sambeekseweg 2  </name>
+</wpt>
+<wpt lat="51.643218" lon="5.958460">
+  <name>Sambeekseweg 25  </name>
+</wpt>
+<wpt lat="51.648510" lon="5.943756">
+  <name>Spoorstraat 7  </name>
+</wpt>
+<wpt lat="51.647921" lon="5.941824">
+  <name>Spoorstraat 27  </name>
+</wpt>
+<wpt lat="51.646989" lon="5.939743">
+  <name>Spoorstraat 60  </name>
+</wpt>
+<wpt lat="51.645869" lon="5.955330">
+  <name>Steenstraat 3  </name>
+</wpt>
+<wpt lat="51.646415" lon="5.953101">
+  <name>Steenstraat 38  </name>
+</wpt>
+<wpt lat="51.646560" lon="5.952777">
+  <name>Steenstraat 44  </name>
+</wpt>
+<wpt lat="51.646769" lon="5.952339">
+  <name>Steenstraat 54  </name>
+</wpt>
+<wpt lat="51.646873" lon="5.951852">
+  <name>Steenstraat 62  </name>
+</wpt>
+<wpt lat="51.647648" lon="5.950390">
+  <name>Steenstraat 69-69a  </name>
+</wpt>
+<wpt lat="51.647145" lon="5.951341">
+  <name>Steenstraat 72  </name>
+</wpt>
+<wpt lat="51.648366" lon="5.948388">
+  <name>Steenstraat 93  </name>
+</wpt>
+<wpt lat="51.648420" lon="5.948187">
+  <name>Steenstraat 95  </name>
+</wpt>
+<wpt lat="51.648139" lon="5.951373">
+  <name>Veerstraat 6  </name>
+</wpt>
+<wpt lat="51.648620" lon="5.952179">
+  <name>Veerstraat 19  </name>
+</wpt>
+<wpt lat="51.650726" lon="5.954596">
+  <name>Veerstraat 22  </name>
+</wpt>
+<wpt lat="51.606818" lon="5.999378">
+  <name>Groeningsestraat 17  </name>
+</wpt>
+<wpt lat="51.608607" lon="5.989726">
+  <name>Hultenhoek 8  </name>
+</wpt>
+<wpt lat="51.578177" lon="6.003219">
+  <name>Kapelstraat 5  </name>
+</wpt>
+<wpt lat="51.569665" lon="6.034332">
+  <name>Monseigneur Geurtsstraat 50  </name>
+</wpt>
+<wpt lat="51.568093" lon="6.035892">
+  <name>Monseigneur Geurtsstraat 74  </name>
+</wpt>
+<wpt lat="51.567649" lon="6.036168">
+  <name>Raaijveldweg 1  </name>
+</wpt>
+<wpt lat="51.700261" lon="5.929063">
+  <name>Looi 1  </name>
+</wpt>
+<wpt lat="51.705497" lon="5.932895">
+  <name>Rijtjes 1  </name>
+</wpt>
+<wpt lat="51.696288" lon="5.934252">
+  <name>Dorpsstraat 20-22  </name>
+</wpt>
+<wpt lat="51.694035" lon="5.938883">
+  <name>Dorpsstraat Kruisbeeld </name>
+</wpt>
+<wpt lat="51.571566" lon="5.942232">
+  <name>Baansestraat 6  </name>
+</wpt>
+<wpt lat="51.571291" lon="5.947537">
+  <name>14 Oktoberplein 9  </name>
+</wpt>
+<wpt lat="51.6574059" lon="5.8846163">
+  <name>Kapelstraat 13  </name>
+</wpt>
+<wpt lat="51.6570477" lon="5.8863899">
+  <name>Meester van den Bergplein 6  </name>
+</wpt>
+<wpt lat="51.6367763" lon="5.9649226">
+  <name>Grotestraat 46  </name>
+</wpt>
+<wpt lat="51.635217" lon="5.9657839">
+  <name>Grotestraat 60  </name>
+</wpt>
+<wpt lat="51.6345302" lon="5.9664973">
+  <name>Grotestraat 72-74  </name>
+</wpt>
+<wpt lat="51.6314918" lon="5.9701849">
+  <name>Grotestraat 104a Molenromp </name>
+</wpt>
+<wpt lat="51.6366774" lon="5.9631011">
+  <name>Torenstraat 41 IJskelder </name>
+</wpt>
+<wpt lat="51.6337720" lon="5.9653321">
+  <name>Torenstraat 65  </name>
+</wpt>
+<wpt lat="51.6325718" lon="5.9534293">
+  <name>Zandsteeg 11  </name>
+</wpt>
+<wpt lat="51.5985251" lon="6.0111988">
+  <name>Grotestraat 38  </name>
+</wpt>
+<wpt lat="51.6189555" lon="5.9908602">
+  <name>Klein Vortum 1  </name>
+</wpt>
+<wpt lat="51.619494" lon="5.9751278">
+  <name>Luinbeekweg 2  </name>
+</wpt>
+<wpt lat="51.6172415" lon="5.9708101">
+  <name>St.Cornelisstraat 48  </name>
+</wpt>
+<wpt lat="51.5963806" lon="6.0087879">
+  <name>Spoorstraat 19  </name>
+</wpt>
+<wpt lat="51.5972172" lon="6.0237085">
+  <name>Staaiweg 25 Excl.rijksmonument= kazemat en keermuur in tuin </name>
+</wpt>
+<wpt lat="51.6230515" lon="5.9844018">
+  <name>Veerweg 8 Schuur </name>
+</wpt>
+</gpx>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+<wpt lat="51.7703979" lon="5.8804789">
+  <name>Heumensebaan 3 Woning </name>
+</wpt>
+<wpt lat="51.7682731" lon="5.8778411">
+  <name>Stationsstraat 79 Woning </name>
+</wpt>
+<wpt lat="51.7664022" lon="5.8716638">
+  <name>Stationsstraat 33 Woning </name>
+</wpt>
+<wpt lat="51.761597" lon="5.8707721">
+  <name>Rijksweg 19 Woning </name>
+</wpt>
+<wpt lat="51.755747" lon="5.8742943">
+  <name>Maasdijk Maaspeil </name>
+</wpt>
+<wpt lat="51.7509442" lon="5.8815147">
+  <name>RK Kerkhof Calvarieberg </name>
+</wpt>
+<wpt lat="51.7579975" lon="5.8939854">
+  <name>Mook War Cemetery Oorlogsmonument burgers </name>
+</wpt>
+<wpt lat="51.7499111" lon="5.8817108">
+  <name>Kerkstraat 8-10 Woning </name>
+</wpt>
+<wpt lat="51.7461284" lon="5.8960628">
+  <name>Rijksweg 189 Woning </name>
+</wpt>
+</gpx>

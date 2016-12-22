@@ -1,13 +1,16 @@
 #!/usr/bin/python
 import mechanize
 import cookielib
-import re
+import re,sys
 plaatsnaam='Wijchen_(gemeente)'
+
 #'Berg_en_Dal_(gemeente)'
 #'Alkmaar_(plaats)'
 #'Arnhem/Heijenoord_en_Lombok'
 #if '/' in plaatsnaam or '_' in plaatsnaam:
 
+if len(sys.argv)>0:
+    plaatsnaam=sys.argv[-1]
 def verwerk(plaatsnaam,openen,doelbestand):
     internet=True
     instukken=False
@@ -165,7 +168,7 @@ r1=br1.open('http://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_
 doelbestand1=verwerk(plaatsnaam,True,True)
 
 for link in br1.links():
-    if 'ijst van gemeentelijke monumenten in ' in link.text:
+    if 'ijst van gemeentelijke monumenten in ' in link.text and 'de gemeente' not in link.text:
 	tesplitsen=link.text
 	gesplitstlijst=tesplitsen.rsplit('ijst van gemeentelijke monumenten in ')
 	plaatsnaam=gesplitstlijst[-1]
