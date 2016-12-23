@@ -168,7 +168,7 @@ r1=br1.open('http://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_
 doelbestand1=verwerk(plaatsnaam,True,True)
 
 for link in br1.links():
-    if 'ijst van gemeentelijke monumenten in ' in link.text and 'de gemeente' not in link.text:
+    if r'/wiki/Lijst van gemeentelijke monumenten in ' in link.url:# and 'de gemeente' not in link.text:
 	tesplitsen=link.text
 	gesplitstlijst=tesplitsen.rsplit('ijst van gemeentelijke monumenten in ')
 	plaatsnaam=gesplitstlijst[-1]
