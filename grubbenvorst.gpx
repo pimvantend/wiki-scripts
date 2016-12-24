@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+<wpt lat="51.4363478" lon="5.9784868">
+  <name>Pastoor Jeukenstraat 6 Woonhuis </name>
+</wpt>
+<wpt lat="51.4327828" lon="5.9742270">
+  <name>Zwarte Plakweg 33 Boerderij </name>
+</wpt>
+<wpt lat="51.4855196" lon="6.1636439">
+  <name>Hoogstraat 26  </name>
+</wpt>
+<wpt lat="51.4870135" lon="6.1647348">
+  <name>Veerweg 4  </name>
+</wpt>
+<wpt lat="51.4867611" lon="6.1648457">
+  <name>Veerweg 8  </name>
+</wpt>
+<wpt lat="51.486707" lon="6.1648737">
+  <name>Veerweg 10  </name>
+</wpt>
+<wpt lat="51.4865273" lon="6.1648562">
+  <name>Veerweg 12  </name>
+</wpt>
+<wpt lat="51.4862216" lon="6.1648654">
+  <name>Veerweg 17  </name>
+</wpt>
+<wpt lat="51.4860161" lon="6.1646603">
+  <name>Veerweg 19  </name>
+</wpt>
+<wpt lat="51.5027973" lon="6.1415853">
+  <name>Belsbergweg 1  </name>
+</wpt>
+<wpt lat="51.5123587" lon="6.1447838">
+  <name>Blitterswijckseweg 22  </name>
+</wpt>
+<wpt lat="51.4924666" lon="6.1598026">
+  <name>Broekhuizerweg 22  </name>
+</wpt>
+<wpt lat="51.4911109" lon="6.1609171">
+  <name>Broekhuizerweg 36  </name>
+</wpt>
+<wpt lat="51.495485" lon="6.1560088">
+  <name>Kerkstraat 6  </name>
+</wpt>
+<wpt lat="51.494841" lon="6.1582588">
+  <name>Kerkstraat 24  </name>
+</wpt>
+<wpt lat="51.4949744" lon="6.1584628">
+  <name>Kerkstraat 26  </name>
+</wpt>
+<wpt lat="51.4942163" lon="6.1616467">
+  <name>Maasstraat 25  </name>
+</wpt>
+<wpt lat="51.5020417" lon="6.1554427">
+  <name>Ooijenseweg 15  </name>
+</wpt>
+<wpt lat="51.4922617" lon="6.1527145">
+  <name>Swolgenseweg 23  </name>
+</wpt>
+<wpt lat="51.403553" lon="5.9575102">
+  <name>Driekooienweg 1 Schuur </name>
+</wpt>
+<wpt lat="51.4077801" lon="5.9533374">
+  <name>Driekooienweg 7 Kortgevelboerderij </name>
+</wpt>
+<wpt lat="51.4065625" lon="5.9597037">
+  <name>Paterstraat 4 Voormalig klooster Ter Peel </name>
+</wpt>
+<wpt lat="51.4200125" lon="6.1492866">
+  <name>Dorpstraat 3 Woonhuis </name>
+</wpt>
+<wpt lat="51.4201272" lon="6.1496193">
+  <name>Dorpstraat 5 Woonhuis </name>
+</wpt>
+<wpt lat="51.4220822" lon="6.1378479">
+  <name>Kloosterstraat 71 H. Hartschool </name>
+</wpt>
+<wpt lat="51.4223513" lon="6.1351495">
+  <name>Kloosterstraat 75-77 Dubbel woonhuis </name>
+</wpt>
+<wpt lat="51.4248408" lon="6.1477283">
+  <name>Lottumseweg 47-49 Dubbel woonhuis </name>
+</wpt>
+<wpt lat="51.4205749" lon="6.1485053">
+  <name>Pastoorstraat 5 Pastorie </name>
+</wpt>
+<wpt lat="51.4208779" lon="6.1475183">
+  <name>Pastoorstraat 9-11 Schoutenhuis </name>
+</wpt>
+<wpt lat="51.3967227" lon="6.1408649">
+  <name>Raaieind 2 Boerderij </name>
+</wpt>
+<wpt lat="51.3966377" lon="6.1414958">
+  <name>Raaieind 3 Boerderij </name>
+</wpt>
+<wpt lat="51.4231139" lon="6.1423508">
+  <name>Wilhelminastraat 7 Boerderij </name>
+</wpt>
+<wpt lat="51.4374823" lon="6.0388493">
+  <name>Past.Debijestraat 8 School </name>
+</wpt>
+<wpt lat="51.4326403" lon="6.0463156">
+  <name>Stationsstraat 131 Woonhuis </name>
+</wpt>
+<wpt lat="51.4151092" lon="6.0006796">
+  <name>Meerweg 6 Kerk Heilige Theresia </name>
+</wpt>
+<wpt lat="51.4150407" lon="6.0000462">
+  <name>Meerweg 8 Pastorie </name>
+</wpt>
+<wpt lat="51.4145172" lon="6.0004559">
+  <name>Simonsstraat 2 Woonhuis (meesterswoning) </name>
+</wpt>
+<wpt lat="51.4131428" lon="5.9985687">
+  <name>Simonsstraat 29 Boerderij </name>
+</wpt>
+<wpt lat="51.4506554" lon="6.0817223">
+  <name>Hogeweg 6 Woonhuis </name>
+</wpt>
+<wpt lat="51.4628776" lon="6.0896940">
+  <name>Koppertweg 5 Herbouwde schuur bij De Locht </name>
+</wpt>
+<wpt lat="51.4609646" lon="6.0849302">
+  <name>Rect.Mulderstraat 4 Woonhuis </name>
+</wpt>
+<wpt lat="51.4615157" lon="6.0844638">
+  <name>Rect.Mulderstraat 5 Pastorie </name>
+</wpt>
+<wpt lat="51.4554044" lon="6.0245308">
+  <name>Schadijkerweg 3 Pastorie </name>
+</wpt>
+<wpt lat="51.4555499" lon="6.0275111">
+  <name>St.Jansstraat 20-22 Dubbel woonhuis </name>
+</wpt>
+<wpt lat="51.4676456" lon="6.0115481">
+  <name>St.Maartensweg 14  </name>
+</wpt>
+</gpx>
