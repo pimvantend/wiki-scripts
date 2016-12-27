@@ -9,7 +9,7 @@ plaatsnaam='Wijchen_(gemeente)'
 #'Arnhem/Heijenoord_en_Lombok'
 #if '/' in plaatsnaam or '_' in plaatsnaam:
 
-if len(sys.argv)>0:
+if len(sys.argv)>1:
     plaatsnaam=sys.argv[-1]
 def verwerk(plaatsnaam,openen,doelbestand):
     internet=True
@@ -163,15 +163,17 @@ br1.set_debug_responses(False)
 
 # User-Agent (this is cheating, ok?)
 br1.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
-
+print 'http://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_'+plaatsnaam
 r1=br1.open('http://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_'+plaatsnaam)
 doelbestand1=verwerk(plaatsnaam,True,True)
 
 for link in br1.links():
-    if r'/wiki/Lijst van gemeentelijke monumenten in ' in link.url:# and 'de gemeente' not in link.text:
+    if r'/wiki/Lijst_van_gemeentelijke_monumenten_in_' in link.url:# and 'de gemeente' not in link.text:
 	tesplitsen=link.text
 	gesplitstlijst=tesplitsen.rsplit('ijst van gemeentelijke monumenten in ')
 	plaatsnaam=gesplitstlijst[-1]
+	if plaatsnaam=='Artikel':
+	    break
 	plaatsnaam=plaatsnaam.replace(' ','_')
 	print plaatsnaam
 	doelbestand1=verwerk(plaatsnaam,False,doelbestand1)
