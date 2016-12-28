@@ -2,7 +2,7 @@
 import mechanize
 import cookielib
 import re,sys
-plaatsnaam='Wijchen_(gemeente)'
+plaatsnaam='Roermond_(gemeente)'
 
 #'Berg_en_Dal_(gemeente)'
 #'Alkmaar_(plaats)'
@@ -163,8 +163,8 @@ br1.set_debug_responses(False)
 
 # User-Agent (this is cheating, ok?)
 br1.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
-print 'http://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_'+plaatsnaam
-r1=br1.open('http://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_'+plaatsnaam)
+print 'https://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_'+plaatsnaam
+r1=br1.open('https://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_'+plaatsnaam)
 doelbestand1=verwerk(plaatsnaam,True,True)
 
 for link in br1.links():

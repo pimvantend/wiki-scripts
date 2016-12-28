@@ -49,6 +49,12 @@
 <wpt lat="51.3833979" lon="6.1766934">
   <name>Hogeweg 2/2a Café Eugenia met bovenwoningen Venlo </name>
 </wpt>
+<wpt lat="51.357958" lon="6.1790699">
+  <name>Kaldenkerkerweg 113-159 Rij woonhuizen Venlo </name>
+</wpt>
+<wpt lat="51.3419266" lon="6.1391995">
+  <name>Kerkstraat 33,35,37,39 vrm Verbruiksvereeniging De Volharding Tegelen </name>
+</wpt>
 <wpt lat="51.3685751" lon="6.1702226">
   <name>Klaasstraat 34-36 Winkel met bovenwoning Venlo </name>
 </wpt>
@@ -67,6 +73,9 @@
 <wpt lat="51.3661578" lon="6.153197">
   <name>Kloosterstraat 3 Woonhuis Blerick </name>
 </wpt>
+<wpt lat="51.3375735" lon="6.1209646">
+  <name>Kloosterstraat 6, 6a Woonhuis Tegelen (Steyl) </name>
+</wpt>
 <wpt lat="51.3701564" lon="6.1722199">
   <name>Lohofstraat 17 Pastorie Venlo </name>
 </wpt>
@@ -84,6 +93,9 @@
 </wpt>
 <wpt lat="51.3442831" lon="6.1372296">
   <name>Sint Martinusstraat 7 Woonhuis Tegelen </name>
+</wpt>
+<wpt lat="51.344401" lon="6.1372451">
+  <name>Sint Martinusstraat 9, 9a-c vrm Bierbrouwerij National Tegelen </name>
 </wpt>
 <wpt lat="51.3445494" lon="6.137269">
   <name>Sint Martinusstraat 11 Bakkerij Giesen Tegelen </name>
@@ -121,6 +133,9 @@
 <wpt lat="51.3686532" lon="6.1707317">
   <name>Parade 54 Café Het Proeflokaal Venlo </name>
 </wpt>
+<wpt lat="51.3731477" lon="6.1728432">
+  <name>Parkstraat 31,31a Herenhuis Venlo </name>
+</wpt>
 <wpt lat="51.3732029" lon="6.1729189">
   <name>Parkstraat 33 Grafisch atelier De Franse Republiek Venlo </name>
 </wpt>
@@ -129,6 +144,9 @@
 </wpt>
 <wpt lat="51.3700642" lon="6.1725195">
   <name>Prinses Beatrixstraat 19 Woonhuis Venlo </name>
+</wpt>
+<wpt lat="51.3671852" lon="6.1671867">
+  <name>Roermondsepoort 35,37 Woonhuis/Bedrijfspand Venlo </name>
 </wpt>
 <wpt lat="51.3718917" lon="6.175782">
   <name>Schoolstraat 9 Woonhuis/Kantoorpand Venlo </name>
@@ -142,6 +160,9 @@
 <wpt lat="51.3726648" lon="6.1742823">
   <name>Sint Martinusstraat 23 Herenhuis Venlo </name>
 </wpt>
+<wpt lat="51.3726976" lon="6.1743538">
+  <name>Sint Martinusstraat 25,25a/b Herenhuis Venlo </name>
+</wpt>
 <wpt lat="51.3724498" lon="6.1742348">
   <name>Sint Martinusstraat 80 Villawoning/Herenhuis Venlo </name>
 </wpt>
@@ -153,6 +174,9 @@
 </wpt>
 <wpt lat="51.339847" lon="6.1349914">
   <name>Spoorstraat 27 Woonhuis Tegelen </name>
+</wpt>
+<wpt lat="51.3397021" lon="6.1349254">
+  <name>Spoorstraat 31,33 Woonhuis Tegelen </name>
 </wpt>
 <wpt lat="51.3397259" lon="6.1346215">
   <name>Spoorstraat 34 Herenhuis Venlo </name>
@@ -166,6 +190,9 @@
 <wpt lat="51.3394226" lon="6.1347977">
   <name>Spoorstraat 39 Woonhuis Tegelen </name>
 </wpt>
+<wpt lat="51.3669243" lon="6.1700761">
+  <name>Spoorstraat 40, 40a/b Woonhuis Venlo </name>
+</wpt>
 <wpt lat="51.3391009" lon="6.1344737">
   <name>Spoorstraat 50 vrm. NMB-Bank, nu Woonhuis Tegelen </name>
 </wpt>
@@ -178,6 +205,12 @@
 <wpt lat="51.33381" lon="6.1351">
   <name>Stationsstraat 17 Woonhuis/Bedrijfspand Tegelen </name>
 </wpt>
+<wpt lat="51.369936" lon="6.1689056">
+  <name>Markt 28/Vleesstraat 2,4 Winkel met bovenwoningen Venlo </name>
+</wpt>
+<wpt lat="51.3696861" lon="6.1691778">
+  <name>Vleesstraat 11,13,15 Winkels met bovenwoningen Venlo </name>
+</wpt>
 <wpt lat="51.3692257" lon="6.1688396">
   <name>Vleesstraat 26 Winkel met bovenwoningen Venlo </name>
 </wpt>
@@ -187,8 +220,26 @@
 <wpt lat="51.3690674" lon="6.1689597">
   <name>Vleesstraat 31 Winkel met bovenwoning Venlo </name>
 </wpt>
+<wpt lat="51.3687215" lon="6.1682172">
+  <name>Vleesstraat 36,38 vrm. City Theater Venlo </name>
+</wpt>
+<wpt lat="51.3744364" lon="6.1725372">
+  <name>Wilhelminapark 8,10 Villa Wilhelmina, Parkvilla Venlo </name>
+</wpt>
+<wpt lat="51.3746671" lon="6.1722579">
+  <name>Wilhelminapark 12,12a Parkvilla Venlo </name>
+</wpt>
 <wpt lat="51.3748964" lon="6.1724526">
   <name>Wilhelminapark 14 Villa Avila, Parkvilla Venlo </name>
+</wpt>
+<wpt lat="51.3744689" lon="6.1709876">
+  <name>Wilhelminapark 15,17 ’t Kamp, Parkvilla Venlo </name>
+</wpt>
+<wpt lat="51.3753745" lon="6.1725674">
+  <name>Wilhelminapark 20,20a Villa Puteanus, Parkvilla Venlo </name>
+</wpt>
+<wpt lat="51.3755563" lon="6.1725002">
+  <name>Wilhelminapark 22, 22a Villa Goltzius, Parkvilla Venlo </name>
 </wpt>
 <wpt lat="51.3758134" lon="6.1698201">
   <name>Wilhelminapark 38 Villa Henriëtte, Parkvilla Venlo </name>
@@ -307,6 +358,9 @@
 <wpt lat="51.312414" lon="6.1089069">
   <name>Urbanusstraat Kerkhof Belfeld </name>
 </wpt>
+<wpt lat="51.3407066" lon="6.1335038">
+  <name>Sint Josephstraat 1,3 Remise gemeentelijke brandspuit Tegelen </name>
+</wpt>
 <wpt lat="51.3693594" lon="6.1689333">
   <name>Vleesstraat 18 Winkel met bovenwoning Venlo </name>
 </wpt>
@@ -322,6 +376,9 @@
 <wpt lat="51.3679548" lon="6.1706776">
   <name>Parade 78 Winkel met bovenwoning Venlo </name>
 </wpt>
+<wpt lat="51.3716188" lon="6.1707773">
+  <name>Geldersepoort 11/11a-e Winkel met bovenwoning Venlo </name>
+</wpt>
 <wpt lat="51.3701843" lon="6.1683357">
   <name>Steenstraat 4 vrm. handelshuis/Café de Roeije Lieuw Venlo </name>
 </wpt>
@@ -336,6 +393,9 @@
 </wpt>
 <wpt lat="51.3699742" lon="6.1685985">
   <name>Markt 24a Winkel met bovenwoning Venlo </name>
+</wpt>
+<wpt lat="51.3431236" lon="6.1358007">
+  <name>Smidsstraat 1/Beekstraat 4 Ewalds-Nooten Tegelen </name>
 </wpt>
 <wpt lat="51.3439458" lon="6.1373808">
   <name>Grotestraat 44 Pand Oehlen Tegelen </name>
