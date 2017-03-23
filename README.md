@@ -9,4 +9,4 @@ wikigeovenlo.py maakt de geocodering voor de lijst van gemeentelijke monumenten 
 
 wikicommo.py maakt een .gpx-bestand van al mijn gegeocodeerde commonsfoto's. dit script vereist python-mechanize.
 
-upload.pl is een gewijzigd neergeladen script, dat nog steeds niet werkt.
+upload.pl is een gewijzigd neergeladen nichalp oplaadscript, dat nog steeds niet werkt.
