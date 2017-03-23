@@ -8,3 +8,5 @@ het script vereist python-mechanize
 wikigeovenlo.py maakt de geocodering voor de lijst van gemeentelijke monumenten in venlo. dit script vereist geocoder.
 
 wikicommo.py maakt een .gpx-bestand van al mijn gegeocodeerde commonsfoto's. dit script vereist python-mechanize.
+
+upload.pl is een gewijzigd neergeladen script, dat nog steeds niet werkt.
