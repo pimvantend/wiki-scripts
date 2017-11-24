@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import geocoder,re
-gemeente='Gronau'
+import geocoder,re,time
+gemeente='Legden'
 regio='DE-NW'
 gemeentebestand=gemeente.lower()+'.txt'
 bestand=open(gemeentebestand,'r')
-opvraging=''
+schrijfbestand=open(gemeentebestand.replace('.txt','1.txt'),'w')
 ortsteilwaarde=''
 bestandstekst=bestand.read()
 bestandgesplitst=bestandstekst.split('|')
@@ -13,16 +13,16 @@ for regel in bestandgesplitstinregels:
     if regel.replace(' ','').startswith('|Ortsteil'):
       ortsteillijst=regel.split('=')
       ortsteilwaarde=ortsteillijst[-1].strip()
-      print(regel)
+      schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Adresse'):
-      print(regel)
+      schrijfbestand.write(regel+'\n')
       regulara=re.compile(r'\((.*?)\)')
       haakjeslijst=regulara.findall(regel)
 #      if '(' in regel:
       regel1=regel
       for haakjestekst in haakjeslijst:
         regel1=regel.replace(' ('+haakjestekst+')','')
-#        print(regel1)
+#        schrijfbestand.write(regel1)
 #        exit()
 #      ruwadres=regel
       positiesortkey=regel1.find('{{SortKey|')
@@ -45,7 +45,8 @@ for regel in bestandgesplitstinregels:
       if r'/' in straat:
         locatieslash=straat.find(r'/')
         straat=straat[:locatieslash]
-#      print(straat)
+#      schrijfbestand.write(straat)
+      opvraging=''
       nieuwens=''
       nieuweew=''
       if len(straat)>0:
@@ -54,37 +55,39 @@ for regel in bestandgesplitstinregels:
         else:
           opvraging=straat+' '+gemeente+' Germany'
         opvraging=opvraging.replace('Morgensternsiedlung,','')
-#        print(opvraging)
+        opvraging=opvraging.replace('Nienborg','Nienborg/Heek')
+#        schrijfbestand.write(opvraging)
+    elif regel.replace(' ','').startswith('|NS'):
+#      schrijfbestand.write(regel)
+      nslijst=regel.split('=')
+      nswaarde=nslijst[-1].strip()
+      if len(nswaarde)==0:
+        time.sleep(2)
         g=geocoder.osm(opvraging)
         if g and 'y' in g.osm:
           nieuwens=str(g.osm['y'])
         if g and 'x' in g.osm:
           nieuweew=str(g.osm['x'])
+        regel1=regel.replace('=','= '+nieuwens)
+        schrijfbestand.write(regel1+'\n')
+      else:
+        schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|EW'):
-#      print(regel)
+#      schrijfbestand.write(regel)
       ewlijst=regel.split('=')
       ewwaarde=ewlijst[-1].strip()
       if len(ewwaarde)==0:
         regel1=regel.replace('=','= '+nieuweew)
-        print(regel1)
+        schrijfbestand.write(regel1+'\n')
       else:
-        print(regel)
-    elif regel.replace(' ','').startswith('|NS'):
-#      print(regel)
-      nslijst=regel.split('=')
-      nswaarde=nslijst[-1].strip()
-      if len(nswaarde)==0:
-        regel1=regel.replace('=','= '+nieuwens)
-        print(regel1)
-      else:
-        print(regel)
+        schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Region'):
       regiolijst=regel.split('=')
       regiowaarde=regiolijst[-1].strip()
       if len(regiowaarde)==0:
         regel1=regel.replace('=','= '+regio)
-        print(regel1)
+        schrijfbestand.write(regel1+'\n')
       else:
-        print(regel)
+        schrijfbestand.write(regel+'\n')
     else:
-      print(regel)
+      schrijfbestand.write(regel+'\n')

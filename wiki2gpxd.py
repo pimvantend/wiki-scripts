@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #import geocoder
-gemeente='Gronau'
+gemeente='Legden'
 gemeentebestand=gemeente.lower()+'1.txt'
 gpxbestandnaam=gemeentebestand.replace('.txt','.gpx')
 bestand=open(gemeentebestand,'r')
