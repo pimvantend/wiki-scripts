@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-import geocoder,re,time
-gemeente='Legden'
+import geocoder,re,time,readline
+ernst=True
+gemeente='Isselburg'
 regio='DE-NW'
 gemeentebestand=gemeente.lower()+'.txt'
 bestand=open(gemeentebestand,'r')
@@ -16,25 +17,17 @@ for regel in bestandgesplitstinregels:
       schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Adresse'):
       schrijfbestand.write(regel+'\n')
-      regulara=re.compile(r'\((.*?)\)')
-      haakjeslijst=regulara.findall(regel)
-#      if '(' in regel:
       regel1=regel
+      reguliersort=re.compile(r'(\{\{SortKey\|(?:.*\|).*?\}\})')
+      regulierkern=re.compile(r'\{\{SortKey\|(?:.*\|)(.*?)\}\}')
+      sortkeylijst=reguliersort.findall(regel1)
+      kernlijst=regulierkern.findall(regel1)
+      for ding in zip(sortkeylijst,kernlijst):
+        regel1=regel1.replace(ding[0],ding[1])
+      regulara=re.compile(r'\((.*?)\)')
+      haakjeslijst=regulara.findall(regel1)
       for haakjestekst in haakjeslijst:
-        regel1=regel.replace(' ('+haakjestekst+')','')
-#        schrijfbestand.write(regel1)
-#        exit()
-#      ruwadres=regel
-      positiesortkey=regel1.find('{{SortKey|')
-      if positiesortkey>-1:
-        positiestreep=regel1.find('|',positiesortkey+10)
-        weghalen=regel1[positiesortkey:positiestreep+1]
-        regel1=regel1.replace(weghalen,'')
-#      regel1=regel.replace('{{SortKey|','')
-      regel1=regel1.replace('}}','')
-#      if '|' in regel1:
-#        regel1lijst=regel1.split('|')
-#        regel1='='+regel1lijst[-1]
+        regel1=regel1.replace(' ('+haakjestekst+')','')
       straatlijst=regel1.split('=')
       straat=straatlijst[-1]
       straat=straat.replace('&nbsp;',' ').strip()
@@ -46,24 +39,26 @@ for regel in bestandgesplitstinregels:
         locatieslash=straat.find(r'/')
         straat=straat[:locatieslash]
 #      schrijfbestand.write(straat)
+      g=False
       opvraging=''
       nieuwens=''
       nieuweew=''
       if len(straat)>0:
-        if len(ortsteilwaarde)>0:
-          opvraging=straat+' '+ortsteilwaarde+' Germany'
-        else:
-          opvraging=straat+' '+gemeente+' Germany'
+        opvraging=straat+' '+gemeente+' Germany'
+        if len(ortsteilwaarde)>0 and not ortsteilwaarde==gemeente:
+          opvraging=straat+' '+ortsteilwaarde+'/'+gemeente+' Germany'
         opvraging=opvraging.replace('Morgensternsiedlung,','')
-        opvraging=opvraging.replace('Nienborg','Nienborg/Heek')
-#        schrijfbestand.write(opvraging)
     elif regel.replace(' ','').startswith('|NS'):
 #      schrijfbestand.write(regel)
       nslijst=regel.split('=')
       nswaarde=nslijst[-1].strip()
-      if len(nswaarde)==0:
-        time.sleep(2)
-        g=geocoder.osm(opvraging)
+      if len(nswaarde)==0 and len(straat)>0:
+        if ernst:
+          time.sleep(2)
+          g=geocoder.osm(opvraging)
+        else:
+          g=False
+          print(opvraging)
         if g and 'y' in g.osm:
           nieuwens=str(g.osm['y'])
         if g and 'x' in g.osm:
@@ -77,7 +72,7 @@ for regel in bestandgesplitstinregels:
       ewlijst=regel.split('=')
       ewwaarde=ewlijst[-1].strip()
       if len(ewwaarde)==0:
-        regel1=regel.replace('=','= '+nieuweew)
+        regel1=regel.replace('= ','= '+nieuweew)
         schrijfbestand.write(regel1+'\n')
       else:
         schrijfbestand.write(regel+'\n')

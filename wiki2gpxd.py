@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 #import geocoder
-gemeente='Legden'
+import re
+gemeente='Isselburg'
 gemeentebestand=gemeente.lower()+'1.txt'
 gpxbestandnaam=gemeentebestand.replace('.txt','.gpx')
 bestand=open(gemeentebestand,'r')
@@ -23,13 +24,20 @@ for regel in bestandgesplitstinregels:
 #      print(regel)
 #      ruwadres=regel
       regel1=regel
-      positiesortkey=regel.find('{{SortKey|')
-      if positiesortkey>-1:
-        positiestreep=regel.find('|',positiesortkey+10)
-        weghalen=regel[positiesortkey:positiestreep+1]
-        regel1=regel.replace(weghalen,'')
+      reguliersort=re.compile(r'(\{\{SortKey\|(?:.*\|).*?\}\})')
+      regulierkern=re.compile(r'\{\{SortKey\|(?:.*\|)(.*?)\}\}')
+      sortkeylijst=reguliersort.findall(regel)
+      kernlijst=regulierkern.findall(regel)
+      for ding in zip(sortkeylijst,kernlijst):
+        regel1=regel.replace(ding[0],ding[1])
+#        print(regel1)
+#      positiesortkey=regel.find('{{SortKey|')
+#      if positiesortkey>-1:
+#        positiestreep=regel.find('|',positiesortkey+10)
+#        weghalen=regel[positiesortkey:positiestreep+1]
+#        regel1=regel.replace(weghalen,'')
 #      regel1=regel.replace('{{SortKey|','')
-      regel1=regel1.replace('}}','')
+#      regel1=regel1.replace('}}','')
 #      if '|' in regel1:
 #        regel1lijst=regel1.split('|')
 #        regel1='='+regel1lijst[-1]
