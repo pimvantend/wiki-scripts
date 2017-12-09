@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import geocoder,re,time,readline
 ernst=True
-gemeente='Isselburg'
+handmatig=True
+gemeente='Schöppingen'
 regio='DE-NW'
 gemeentebestand=gemeente.lower()+'.txt'
 bestand=open(gemeentebestand,'r')
@@ -11,19 +12,19 @@ bestandstekst=bestand.read()
 bestandgesplitst=bestandstekst.split('|')
 bestandgesplitstinregels=bestandstekst.split('\n')
 for regel in bestandgesplitstinregels:
+    regel1=regel
+    reguliersort=re.compile(r'(\{\{SortKey\|(?:.*\|).*?\}\})')
+    regulierkern=re.compile(r'\{\{SortKey\|(?:.*\|)(.*?)\}\}')
+    sortkeylijst=reguliersort.findall(regel1)
+    kernlijst=regulierkern.findall(regel1)
+    for ding in zip(sortkeylijst,kernlijst):
+      regel1=regel1.replace(ding[0],ding[1])
     if regel.replace(' ','').startswith('|Ortsteil'):
-      ortsteillijst=regel.split('=')
+      ortsteillijst=regel1.split('=')
       ortsteilwaarde=ortsteillijst[-1].strip()
       schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Adresse'):
       schrijfbestand.write(regel+'\n')
-      regel1=regel
-      reguliersort=re.compile(r'(\{\{SortKey\|(?:.*\|).*?\}\})')
-      regulierkern=re.compile(r'\{\{SortKey\|(?:.*\|)(.*?)\}\}')
-      sortkeylijst=reguliersort.findall(regel1)
-      kernlijst=regulierkern.findall(regel1)
-      for ding in zip(sortkeylijst,kernlijst):
-        regel1=regel1.replace(ding[0],ding[1])
       regulara=re.compile(r'\((.*?)\)')
       haakjeslijst=regulara.findall(regel1)
       for haakjestekst in haakjeslijst:
@@ -44,9 +45,9 @@ for regel in bestandgesplitstinregels:
       nieuwens=''
       nieuweew=''
       if len(straat)>0:
-        opvraging=straat+' '+gemeente+' Germany'
+        opvraging=straat+', '+gemeente+', Germany'
         if len(ortsteilwaarde)>0 and not ortsteilwaarde==gemeente:
-          opvraging=straat+' '+ortsteilwaarde+'/'+gemeente+' Germany'
+          opvraging=straat+', '+ortsteilwaarde+'/'+gemeente+', Germany'
         opvraging=opvraging.replace('Morgensternsiedlung,','')
     elif regel.replace(' ','').startswith('|NS'):
 #      schrijfbestand.write(regel)
@@ -56,6 +57,15 @@ for regel in bestandgesplitstinregels:
         if ernst:
           time.sleep(2)
           g=geocoder.osm(opvraging)
+          if handmatig and not g:
+            def pre_input_hook():
+              readline.insert_text(opvraging)
+              readline.redisplay()
+            readline.set_pre_input_hook(pre_input_hook)
+            nieuweopvraging=input()
+#            print(len(nieuweopvraging))
+            if len(nieuweopvraging)>0:
+              g=geocoder.osm(nieuweopvraging)
         else:
           g=False
           print(opvraging)
@@ -72,12 +82,12 @@ for regel in bestandgesplitstinregels:
       ewlijst=regel.split('=')
       ewwaarde=ewlijst[-1].strip()
       if len(ewwaarde)==0:
-        regel1=regel.replace('= ','= '+nieuweew)
+        regel1=regel.replace('=','= '+nieuweew)
         schrijfbestand.write(regel1+'\n')
       else:
         schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Region'):
-      regiolijst=regel.split('=')
+      regiolijst=regel1.split('=')
       regiowaarde=regiolijst[-1].strip()
       if len(regiowaarde)==0:
         regel1=regel.replace('=','= '+regio)
@@ -86,3 +96,7 @@ for regel in bestandgesplitstinregels:
         schrijfbestand.write(regel+'\n')
     else:
       schrijfbestand.write(regel+'\n')
+schrijfbestand.close()
+import wiki2gpxd
+wiki2gpxd.wiki2gpxd(gemeente)
+#schöppingen.txt
