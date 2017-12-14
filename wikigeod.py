@@ -2,8 +2,11 @@
 import geocoder,re,time,readline
 ernst=True
 handmatig=True
-gemeente='Schöppingen'
+gemeente='Recke_(Westfalen)'
+#'Hörstel'
 regio='DE-NW'
+import wikihaald
+wikihaald.wikihaald(gemeente)
 gemeentebestand=gemeente.lower()+'.txt'
 bestand=open(gemeentebestand,'r')
 schrijfbestand=open(gemeentebestand.replace('.txt','1.txt'),'w')
@@ -49,6 +52,7 @@ for regel in bestandgesplitstinregels:
         if len(ortsteilwaarde)>0 and not ortsteilwaarde==gemeente:
           opvraging=straat+', '+ortsteilwaarde+'/'+gemeente+', Germany'
         opvraging=opvraging.replace('Morgensternsiedlung,','')
+        opvraging=opvraging.replace('_',' ')
     elif regel.replace(' ','').startswith('|NS'):
 #      schrijfbestand.write(regel)
       nslijst=regel.split('=')
