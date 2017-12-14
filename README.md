@@ -14,3 +14,5 @@ upload.pl is een gewijzigd neergeladen nichalp oplaadscript, dat nog steeds niet
 wikigeod.py geocodeert monumentenlijsten in de duitstalige wikipedia, is python3 en vereist geocoder
 
 wiki2gpxd.py maakt van het resultaat een gpx-bestand om te kunnen controleren of er geen rare posities zijn
+
+wikihaald.py wordt aangeroepen door wikigeod.py om de lijst ter bewerking neer te laden. Vooralsnog werkt dit alleen voor gemeenten met een louter-ascii-naam.
