@@ -62,9 +62,16 @@ def wiki2gpxd(gemeente):
       beschrijving=beschrijving.replace('<br />',' ')
       if len(nswaarde)>0 and len(ewwaarde)>0:
         gpxbestand.write('<wpt lat="'+nswaarde+'" lon="'+ewwaarde+'">\n')
-        gpxnaam='  <name>'+straat+', '+beschrijving
+        gpxnaam=straat+', '+beschrijving
+        reguliernaam=re.compile('(<.*?>)')
+        taglijst=reguliernaam.findall(gpxnaam)
+        for ding in taglijst:
+          gpxnaam=gpxnaam.replace(ding,' ')
 #    gpxnaam+=' '+dictio['bouwjaar']
+        gpxnaam=gpxnaam.replace('&nbsp;',' ')
         gpxnaam=gpxnaam.replace(';','')
+        gpxnaam=gpxnaam.replace('&','')
+        gpxnaam='  <name>'+gpxnaam
         gpxbestand.write(gpxnaam)
         gpxbestand.write('</name>\n')
         gpxbestand.write('</wpt>\n')

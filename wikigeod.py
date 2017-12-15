@@ -2,7 +2,8 @@
 import geocoder,re,time,readline
 ernst=True
 handmatig=True
-gemeente='Recke_(Westfalen)'
+gemeente='Nordkirchen'
+#'Ibbenbüren'
 #'Hörstel'
 regio='DE-NW'
 import wikihaald
@@ -52,6 +53,9 @@ for regel in bestandgesplitstinregels:
         if len(ortsteilwaarde)>0 and not ortsteilwaarde==gemeente:
           opvraging=straat+', '+ortsteilwaarde+'/'+gemeente+', Germany'
         opvraging=opvraging.replace('Morgensternsiedlung,','')
+        opvraging=opvraging.replace('[','')
+        opvraging=opvraging.replace(']','')
+#        opvraging=opvraging.replace('_(Münsterland)','')
         opvraging=opvraging.replace('_',' ')
     elif regel.replace(' ','').startswith('|NS'):
 #      schrijfbestand.write(regel)

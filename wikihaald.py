@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-import urllib.request
+import urllib.request,urllib.parse
 #,re
 def wikihaald(gemeente):
   aan=False
 #  gemeente='Hopsten'
   schrijfbestand=open(gemeente.lower()+'.txt','wb')
-  opvraging='https://de.wikipedia.org/w/index.php?title=Liste_der_Baudenkm%C3%A4ler_in_'+gemeente+'&action=edit'
+  opvraging='https://de.wikipedia.org/w/index.php?title=Liste_der_Baudenkm%C3%A4ler_in_'+urllib.parse.quote(gemeente)+'&action=edit'
   with urllib.request.urlopen(opvraging) as response:
 #  html=response.read()
     for regel in response:
