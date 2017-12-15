@@ -15,4 +15,4 @@ wikigeod.py geocodeert monumentenlijsten in de duitstalige wikipedia, is python3
 
 wiki2gpxd.py maakt van het resultaat een gpx-bestand om te kunnen controleren of er geen rare posities zijn
 
-wikihaald.py wordt aangeroepen door wikigeod.py om de lijst ter bewerking neer te laden. Vooralsnog werkt dit alleen voor gemeenten met een louter-ascii-naam.
+wikihaald.py wordt aangeroepen door wikigeod.py om de lijst ter bewerking neer te laden.
