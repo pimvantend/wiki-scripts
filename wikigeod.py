@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-import geocoder,re,time,readline
+import geocoder,re,time,readline,sys
+if len(sys.argv)>1:
+  gemeente=sys.argv[1]
+else:
+  gemeente='Kranenburg_(Niederrhein)'
+#sys.exit()
 ernst=True
 handmatig=True
-gemeente='Nordkirchen'
+#
 #'Ibbenbüren'
 #'Hörstel'
 regio='DE-NW'
 import wikihaald
-wikihaald.wikihaald(gemeente)
+if ernst:
+  wikihaald.wikihaald(gemeente)
 gemeentebestand=gemeente.lower()+'.txt'
 bestand=open(gemeentebestand,'r')
 schrijfbestand=open(gemeentebestand.replace('.txt','1.txt'),'w')
@@ -29,17 +35,13 @@ for regel in bestandgesplitstinregels:
       schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Adresse'):
       schrijfbestand.write(regel+'\n')
-      regulara=re.compile(r'\((.*?)\)')
-      haakjeslijst=regulara.findall(regel1)
-      for haakjestekst in haakjeslijst:
-        regel1=regel1.replace(' ('+haakjestekst+')','')
       straatlijst=regel1.split('=')
       straat=straatlijst[-1]
       straat=straat.replace('&nbsp;',' ').strip()
       straat=straat.replace('–','-')
-      if r'-' in straat:
-        locatiestreepje=straat.find(r'-')
-        straat=straat[:locatiestreepje]
+#      if r'-' in straat:
+#        locatiestreepje=straat.find(r'-')
+#        straat=straat[:locatiestreepje]
       if r'/' in straat:
         locatieslash=straat.find(r'/')
         straat=straat[:locatieslash]
@@ -57,6 +59,10 @@ for regel in bestandgesplitstinregels:
         opvraging=opvraging.replace(']','')
 #        opvraging=opvraging.replace('_(Münsterland)','')
         opvraging=opvraging.replace('_',' ')
+        regulara=re.compile(r'\((.*?)\)')
+        haakjeslijst=regulara.findall(opvraging)
+        for haakjestekst in haakjeslijst:
+          opvraging=opvraging.replace(' ('+haakjestekst+')','')
     elif regel.replace(' ','').startswith('|NS'):
 #      schrijfbestand.write(regel)
       nslijst=regel.split('=')
@@ -70,6 +76,7 @@ for regel in bestandgesplitstinregels:
               readline.insert_text(opvraging)
               readline.redisplay()
             readline.set_pre_input_hook(pre_input_hook)
+            print(straat)
             nieuweopvraging=input()
 #            print(len(nieuweopvraging))
             if len(nieuweopvraging)>0:
