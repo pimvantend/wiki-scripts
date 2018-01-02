@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 import geocoder,re,time,readline,sys
+ophalen=True
 if len(sys.argv)>1:
   gemeente=sys.argv[1]
 else:
-  gemeente='Kranenburg_(Niederrhein)'
+  gemeente='Rheurdt'
+  ophalen=False
 #sys.exit()
 ernst=True
 handmatig=True
@@ -12,24 +14,29 @@ handmatig=True
 #'Hörstel'
 regio='DE-NW'
 import wikihaald
-if ernst:
+if ophalen:
   wikihaald.wikihaald(gemeente)
 gemeentebestand=gemeente.lower()+'.txt'
 bestand=open(gemeentebestand,'r')
 schrijfbestand=open(gemeentebestand.replace('.txt','1.txt'),'w')
-ortsteilwaarde=''
+#ortsteilwaarde=''
 bestandstekst=bestand.read()
 bestandgesplitst=bestandstekst.split('|')
 bestandgesplitstinregels=bestandstekst.split('\n')
 for regel in bestandgesplitstinregels:
     regel1=regel
+#    ortsteilwaarde=''
     reguliersort=re.compile(r'(\{\{SortKey\|(?:.*\|).*?\}\})')
     regulierkern=re.compile(r'\{\{SortKey\|(?:.*\|)(.*?)\}\}')
     sortkeylijst=reguliersort.findall(regel1)
     kernlijst=regulierkern.findall(regel1)
     for ding in zip(sortkeylijst,kernlijst):
       regel1=regel1.replace(ding[0],ding[1])
-    if regel.replace(' ','').startswith('|Ortsteil'):
+    if regel.replace(' ','').startswith('{{Denkmalliste1Tabellenzeile'):
+#      print(regel)
+      ortsteilwaarde=''
+      schrijfbestand.write(regel+'\n')
+    elif regel.replace(' ','').startswith('|Ortsteil'):
       ortsteillijst=regel1.split('=')
       ortsteilwaarde=ortsteillijst[-1].strip()
       schrijfbestand.write(regel+'\n')
@@ -89,7 +96,7 @@ for regel in bestandgesplitstinregels:
         if g and 'x' in g.osm:
           nieuweew=str(g.osm['x'])
         regel1=regel.replace('=','= '+nieuwens)
-        schrijfbestand.write(regel1+'\n')
+        schrijfbestand.write(regel1.strip()+'\n')
       else:
         schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|EW'):
@@ -98,7 +105,7 @@ for regel in bestandgesplitstinregels:
       ewwaarde=ewlijst[-1].strip()
       if len(ewwaarde)==0:
         regel1=regel.replace('=','= '+nieuweew)
-        schrijfbestand.write(regel1+'\n')
+        schrijfbestand.write(regel1.strip()+'\n')
       else:
         schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Region'):
