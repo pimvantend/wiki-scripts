@@ -19,13 +19,11 @@ if ophalen:
 gemeentebestand=gemeente.lower()+'.txt'
 bestand=open(gemeentebestand,'r')
 schrijfbestand=open(gemeentebestand.replace('.txt','1.txt'),'w')
-#ortsteilwaarde=''
 bestandstekst=bestand.read()
 bestandgesplitst=bestandstekst.split('|')
 bestandgesplitstinregels=bestandstekst.split('\n')
 for regel in bestandgesplitstinregels:
     regel1=regel
-#    ortsteilwaarde=''
     reguliersort=re.compile(r'(\{\{SortKey\|(?:.*\|).*?\}\})')
     regulierkern=re.compile(r'\{\{SortKey\|(?:.*\|)(.*?)\}\}')
     sortkeylijst=reguliersort.findall(regel1)
@@ -49,10 +47,10 @@ for regel in bestandgesplitstinregels:
 #      if r'-' in straat:
 #        locatiestreepje=straat.find(r'-')
 #        straat=straat[:locatiestreepje]
-      if r'/' in straat:
-        locatieslash=straat.find(r'/')
-        straat=straat[:locatieslash]
 #      schrijfbestand.write(straat)
+#      if r'/' in straat:
+#        locatieslash=straat.find(r'/')
+#        straat=straat[:locatieslash]
       g=False
       opvraging=''
       nieuwens=''
@@ -62,14 +60,21 @@ for regel in bestandgesplitstinregels:
         if len(ortsteilwaarde)>0 and not ortsteilwaarde==gemeente:
           opvraging=straat+', '+ortsteilwaarde+'/'+gemeente+', Germany'
         opvraging=opvraging.replace('Morgensternsiedlung,','')
+        opvraging=opvraging.replace('_',' ')
+        opvraging=opvraging.replace(' (Gemeinde)','')
+        opvraging=opvraging.replace(' (Münsterland)','')
+        opvraging=opvraging.replace(' (Kernstadt)','')
         opvraging=opvraging.replace('[','')
         opvraging=opvraging.replace(']','')
-#        opvraging=opvraging.replace('_(Münsterland)','')
         opvraging=opvraging.replace('_',' ')
         regulara=re.compile(r'\((.*?)\)')
         haakjeslijst=regulara.findall(opvraging)
         for haakjestekst in haakjeslijst:
           opvraging=opvraging.replace(' ('+haakjestekst+')','')
+        regularb=re.compile(r'\<(.*?)\>')
+        punthakenlijst=regularb.findall(opvraging)
+        for punthakentekst in punthakenlijst:
+          opvraging=opvraging.replace('<'+punthakentekst+'>',' ')
     elif regel.replace(' ','').startswith('|NS'):
 #      schrijfbestand.write(regel)
       nslijst=regel.split('=')
