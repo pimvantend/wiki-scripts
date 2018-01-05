@@ -3,7 +3,7 @@ scripts voor wikipediadingen
 
 wiki4gpx.py maakt een .gpx-bestand met de coordinaten van de gemeentelijke monumenten die nog geen foto hebben.
 de belangrijkste aanpassing per plaats/gemeente is het invullen van de plaatsnaam voorin het script.
-het script vereist python-mechanize
+het script vereist python-mechanize.
 
 wikigeovenlo.py maakt de geocodering voor de lijst van gemeentelijke monumenten in venlo. dit script vereist geocoder.
 
@@ -16,3 +16,5 @@ wikigeod.py geocodeert monumentenlijsten in de duitstalige wikipedia, is python3
 wiki2gpxd.py maakt van het resultaat een gpx-bestand om te kunnen controleren of er geen rare posities zijn
 
 wikihaald.py wordt aangeroepen door wikigeod.py om de lijst ter bewerking neer te laden.
+
+wikicropd.py dient om coordinaten die ver buiten de gemeente vallen, gemakkelijk te kunnen verwijderen.
