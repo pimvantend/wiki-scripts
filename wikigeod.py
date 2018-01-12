@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 import geocoder,re,time,readline,sys
 ophalen=True
+ernst=True
+handmatig=True
 if len(sys.argv)>1:
   gemeente=sys.argv[1]
 else:
   gemeente='Rheurdt'
   ophalen=False
 #sys.exit()
-ernst=True
-handmatig=True
 #
 #'Ibbenbüren'
 #'Hörstel'

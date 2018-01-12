@@ -67,10 +67,11 @@ def wiki2gpxd(gemeente):
         taglijst=reguliernaam.findall(gpxnaam)
         for ding in taglijst:
           gpxnaam=gpxnaam.replace(ding,' ')
-#    gpxnaam+=' '+dictio['bouwjaar']
         gpxnaam=gpxnaam.replace('&nbsp;',' ')
         gpxnaam=gpxnaam.replace(';','')
         gpxnaam=gpxnaam.replace('&','')
+        gpxnaam=gpxnaam.replace("'",'')
+#        gpxnaam='baudenkmal'
         gpxnaam='  <name>'+gpxnaam
         gpxbestand.write(gpxnaam)
         gpxbestand.write('</name>\n')
