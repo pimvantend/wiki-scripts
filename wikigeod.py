@@ -3,6 +3,7 @@ import geocoder,re,time,readline,sys
 ophalen=True
 ernst=True
 handmatig=True
+ortsteile=True
 if len(sys.argv)>1:
   gemeente=sys.argv[1]
 else:
@@ -57,8 +58,9 @@ for regel in bestandgesplitstinregels:
       nieuweew=''
       if len(straat)>0:
         opvraging=straat+', '+gemeente+', Germany'
-        if len(ortsteilwaarde)>0 and not ortsteilwaarde==gemeente:
-          opvraging=straat+', '+ortsteilwaarde+'/'+gemeente+', Germany'
+        if ortsteile and len(ortsteilwaarde)>0 and not ortsteilwaarde==gemeente:
+          opvraging=straat+', '+ortsteilwaarde+', '+gemeente+', Germany'
+        opvraging=opvraging.replace('Fröndenberg','Fröndenberg/Ruhr')
         opvraging=opvraging.replace('Morgensternsiedlung,','')
         opvraging=opvraging.replace('_',' ')
         opvraging=opvraging.replace(' (Gemeinde)','')
@@ -98,9 +100,15 @@ for regel in bestandgesplitstinregels:
           print(opvraging)
         if g and 'y' in g.osm:
           nieuwens=str(g.osm['y'])
+          regel1=regel.replace('=','= '+nieuwens)
+#          print(g.json)
+          if 'town' in g.geojson['features'][0]['properties'].keys():
+            plaats1=g.geojson['features'][0]['properties']['town']
+            print(plaats1,straat)
+          else:
+            print(g.geojson['features'][0]['properties'].keys())
         if g and 'x' in g.osm:
           nieuweew=str(g.osm['x'])
-        regel1=regel.replace('=','= '+nieuwens)
         schrijfbestand.write(regel1.strip()+'\n')
       else:
         schrijfbestand.write(regel+'\n')
