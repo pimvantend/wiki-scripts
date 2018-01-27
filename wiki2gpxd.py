@@ -53,6 +53,10 @@ def wiki2gpxd(gemeente):
 #      print(regel)
       nslijst=regel.split('=')
       nswaarde=nslijst[-1].strip()
+      reguliernaam=re.compile('(<.*?>)')
+      taglijst=reguliernaam.findall(nswaarde)
+      for ding in taglijst:
+        nswaarde=nswaarde.replace(ding,' ')
 #    if regel.replace(' ','').startswith('|Ortsteil'):
 #        print(regel)
     elif regel.replace(' ','').startswith('|Beschreibung'):
@@ -60,9 +64,17 @@ def wiki2gpxd(gemeente):
       beschreibungslijst=regel.split('=')
       beschrijving=beschreibungslijst[-1].strip()
       beschrijving=beschrijving.replace('<br />',' ')
+### tijdelijk voor Aachen-Brand!:
+    elif regel.replace(' ','').startswith('|Bezeichnung'):
+#      print(regel)
+      bezeichnungslijst=regel.split('=')
+      besgrijving=bezeichnungslijst[-1].strip()
+      besgrijving=besgrijving.replace('<br />',' ')
+### tijdelijk voor Aachen-Brand!:
+    elif regel.replace(' ','').startswith('|Beschriftung'):
       if len(nswaarde)>0 and len(ewwaarde)>0:
         gpxbestand.write('<wpt lat="'+nswaarde+'" lon="'+ewwaarde+'">\n')
-        gpxnaam=straat+', '+beschrijving
+        gpxnaam=straat+', '+besgrijving
         reguliernaam=re.compile('(<.*?>)')
         taglijst=reguliernaam.findall(gpxnaam)
         for ding in taglijst:
@@ -77,3 +89,6 @@ def wiki2gpxd(gemeente):
         gpxbestand.write('</name>\n')
         gpxbestand.write('</wpt>\n')
   gpxbestand.write('</gpx>\n')
+if __name__=="__main__":
+  import sys
+  wiki2gpxd(sys.argv[-1])

@@ -16,7 +16,7 @@ else:
 regio='DE-NW'
 import wikihaald
 if ophalen:
-  wikihaald.wikihaald(gemeente)
+  wikihaald.wikihaald(gemeente,'de')
 gemeentebestand=gemeente.lower()+'.txt'
 bestand=open(gemeentebestand,'r')
 schrijfbestand=open(gemeentebestand.replace('.txt','1.txt'),'w')
@@ -34,6 +34,7 @@ for regel in bestandgesplitstinregels:
     if regel.replace(' ','').startswith('{{Denkmalliste1Tabellenzeile'):
 #      print(regel)
       ortsteilwaarde=''
+      straat=''
       schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Ortsteil'):
       ortsteillijst=regel1.split('=')
@@ -62,6 +63,9 @@ for regel in bestandgesplitstinregels:
           opvraging=straat+', '+ortsteilwaarde+', '+gemeente+', Germany'
         opvraging=opvraging.replace('Fröndenberg','Fröndenberg/Ruhr')
         opvraging=opvraging.replace('Morgensternsiedlung,','')
+        opvraging=opvraging.replace('Stadtmitte, ','')
+        opvraging=opvraging.replace('Aachen-Mitte (A–H)','Aachen')
+        opvraging=opvraging.replace('gegenüber ','')
         opvraging=opvraging.replace('_',' ')
         opvraging=opvraging.replace(' (Gemeinde)','')
         opvraging=opvraging.replace(' (Münsterland)','')
@@ -105,11 +109,20 @@ for regel in bestandgesplitstinregels:
           if 'town' in g.geojson['features'][0]['properties'].keys():
             plaats1=g.geojson['features'][0]['properties']['town']
             print(plaats1,straat)
+          elif 'city' in g.geojson['features'][0]['properties'].keys():
+            plaats1=g.geojson['features'][0]['properties']['city']
+            print(plaats1,straat)
+          elif 'village' in g.geojson['features'][0]['properties'].keys():
+            plaats1=g.geojson['features'][0]['properties']['village']
+            print(plaats1,straat)
+          elif 'suburb' in g.geojson['features'][0]['properties'].keys():
+            plaats1=g.geojson['features'][0]['properties']['suburb']
+            print(plaats1,straat)
           else:
             print(g.geojson['features'][0]['properties'].keys())
         if g and 'x' in g.osm:
           nieuweew=str(g.osm['x'])
-        schrijfbestand.write(regel1.strip()+'\n')
+        schrijfbestand.write(regel1.rstrip()+'\n')
       else:
         schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|EW'):
@@ -118,7 +131,7 @@ for regel in bestandgesplitstinregels:
       ewwaarde=ewlijst[-1].strip()
       if len(ewwaarde)==0:
         regel1=regel.replace('=','= '+nieuweew)
-        schrijfbestand.write(regel1.strip()+'\n')
+        schrijfbestand.write(regel1.rstrip()+'\n')
       else:
         schrijfbestand.write(regel+'\n')
     elif regel.replace(' ','').startswith('|Region'):

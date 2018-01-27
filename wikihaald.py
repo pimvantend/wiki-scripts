@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 import urllib.request,urllib.parse
 #,re
-def wikihaald(gemeente):
+def wikihaald(gemeente,land):
   aan=False
 #  gemeente='Hopsten'
   schrijfbestand=open(gemeente.lower()+'.txt','wb')
-  opvraging='https://de.wikipedia.org/w/index.php?title=Liste_der_Baudenkm%C3%A4ler_in_'+urllib.parse.quote(gemeente)+'&action=edit'
+  if land=='de':
+    opvraging='https://de.wikipedia.org/w/index.php?title=Liste_der_Baudenkm%C3%A4ler_in_'+urllib.parse.quote(gemeente)+'&action=edit'
+  else:
+    opvraging='https://nl.wikipedia.org/w/index.php?title=Lijst_van_gemeentelijke_monumenten_in_'+urllib.parse.quote(gemeente)+'&action=edit'
   with urllib.request.urlopen(opvraging) as response:
 #  html=response.read()
     for regel in response:
@@ -28,3 +31,7 @@ def wikihaald(gemeente):
         schrijfbestand.write(regel1)
 #+'\n')
   schrijfbestand.close()
+
+if __name__ == "__main__":
+  import sys
+  wikihaald(sys.argv[-1],'nl')
