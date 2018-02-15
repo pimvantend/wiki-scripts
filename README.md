@@ -11,6 +11,8 @@ wikicommo.py maakt een .gpx-bestand van al mijn gegeocodeerde commonsfoto's. dit
 
 upload.pl is een gewijzigd neergeladen nichalp oplaadscript, dat nog steeds niet werkt.
 
+wikifon.py is voor het opladen van foto's van gemeentelijke monumenten. Heeft allerlei hulpprogramma's nodig.
+
 wikigeod.py geocodeert monumentenlijsten in de duitstalige wikipedia, is python3 en vereist geocoder
 
 wiki2gpxd.py maakt van het resultaat een gpx-bestand om te kunnen controleren of er geen rare posities zijn
