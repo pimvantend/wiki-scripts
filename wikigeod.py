@@ -4,6 +4,7 @@ ophalen=True
 ernst=True
 handmatig=True
 ortsteile=True
+aanvullen=False
 if len(sys.argv)>1:
   gemeente=sys.argv[1]
 else:
@@ -58,21 +59,20 @@ for regel in bestandgesplitstinregels:
       nieuwens=''
       nieuweew=''
       if len(straat)>0:
-        opvraging=straat+', '+gemeente+', Germany'
+        opvraging=straat+', '+gemeente+', Deutschland'
         if ortsteile and len(ortsteilwaarde)>0 and not ortsteilwaarde==gemeente:
-          opvraging=straat+', '+ortsteilwaarde+', '+gemeente+', Germany'
-        opvraging=opvraging.replace('Fröndenberg','Fröndenberg/Ruhr')
-        opvraging=opvraging.replace('Morgensternsiedlung,','')
-        opvraging=opvraging.replace('Stadtmitte, ','')
-        opvraging=opvraging.replace('Aachen-Mitte (A–H)','Aachen')
-        opvraging=opvraging.replace('gegenüber ','')
+          opvraging=straat+', '+ortsteilwaarde+', '+gemeente+', Deutschland'
         opvraging=opvraging.replace('_',' ')
+        opvraging=opvraging.replace('Fröndenberg','Fröndenberg/Ruhr')
+        opvraging=opvraging.replace('Mnorgensternsiedlung,','')
+        opvraging=opvraging.replace('Stadtmitte, ','')
+        opvraging=opvraging.replace(' und Neuheim','')
+        opvraging=opvraging.replace('gegenüber ','')
         opvraging=opvraging.replace(' (Gemeinde)','')
         opvraging=opvraging.replace(' (Münsterland)','')
         opvraging=opvraging.replace(' (Kernstadt)','')
         opvraging=opvraging.replace('[','')
         opvraging=opvraging.replace(']','')
-        opvraging=opvraging.replace('_',' ')
         regulara=re.compile(r'\((.*?)\)')
         haakjeslijst=regulara.findall(opvraging)
         for haakjestekst in haakjeslijst:
@@ -89,6 +89,17 @@ for regel in bestandgesplitstinregels:
         if ernst:
           time.sleep(2)
           g=geocoder.osm(opvraging)
+          if handmatig and not g:
+            plaatskomma=straat.find(',')
+            if plaatskomma>0:
+              opvraging1=straat[:plaatskomma]+', '+gemeente+', Deutschland'
+              opvraging1=opvraging1.replace('_',' ')
+              regulara=re.compile(r'\((.*?)\)')
+              haakjeslijst=regulara.findall(opvraging1)
+              for haakjestekst in haakjeslijst:
+                opvraging1=opvraging1.replace(' ('+haakjestekst+')','')
+              print(opvraging1)
+              g=geocoder.osm(opvraging1)
           if handmatig and not g:
             def pre_input_hook():
               readline.insert_text(opvraging)
@@ -142,6 +153,11 @@ for regel in bestandgesplitstinregels:
         schrijfbestand.write(regel1+'\n')
       else:
         schrijfbestand.write(regel+'\n')
+    elif regel.startswith('|Nummer') and aanvullen:
+      schrijfbestand.write(regel+'\n')
+      schrijfbestand.write('|NS           ='+'\n')
+      schrijfbestand.write('|EW           ='+'\n')
+      schrijfbestand.write('|Region       ='+'\n')
     else:
       schrijfbestand.write(regel+'\n')
 schrijfbestand.close()

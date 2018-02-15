@@ -71,7 +71,7 @@ def wiki2gpxd(gemeente):
       besgrijving=bezeichnungslijst[-1].strip()
       besgrijving=besgrijving.replace('<br />',' ')
 ### tijdelijk voor Aachen-Brand!:
-    elif regel.replace(' ','').startswith('|Beschriftung'):
+    elif regel.replace(' ','').startswith('|Region'):
       if len(nswaarde)>0 and len(ewwaarde)>0:
         gpxbestand.write('<wpt lat="'+nswaarde+'" lon="'+ewwaarde+'">\n')
         gpxnaam=straat+', '+besgrijving
