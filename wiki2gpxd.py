@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import re
+omschrijvingtoevoegen=False
 def wiki2gpxd(gemeente):
 #gemeente='Raesfeld'
   gemeentebestand=gemeente.lower()+'1.txt'
@@ -72,8 +73,7 @@ def wiki2gpxd(gemeente):
       besgrijving=besgrijving.replace('<br />',' ')
 ### tijdelijk voor Aachen-Brand!:
     elif regel.replace(' ','').startswith('|Region'):
-      if len(nswaarde)>0 and len(ewwaarde)>0:
-        gpxbestand.write('<wpt lat="'+nswaarde+'" lon="'+ewwaarde+'">\n')
+      if len(nswaarde)>0 and len(ewwaarde)>0 and omschrijvingtoevoegen:
         gpxnaam=straat+', '+besgrijving
         reguliernaam=re.compile('(<.*?>)')
         taglijst=reguliernaam.findall(gpxnaam)
@@ -83,8 +83,11 @@ def wiki2gpxd(gemeente):
         gpxnaam=gpxnaam.replace(';','')
         gpxnaam=gpxnaam.replace('&','')
         gpxnaam=gpxnaam.replace("'",'')
-#        gpxnaam='baudenkmal'
-        gpxnaam='  <name>'+gpxnaam
+      elif len(nswaarde)>0 and len(ewwaarde)>0:
+        gpxnaam='baudenkmal'
+      if len(nswaarde)>0 and len(ewwaarde)>0:
+        gpxbestand.write('<wpt lat="'+nswaarde+'" lon="'+ewwaarde+'">\n')
+        gpxbestand.write('<name>')
         gpxbestand.write(gpxnaam)
         gpxbestand.write('</name>\n')
         gpxbestand.write('</wpt>\n')

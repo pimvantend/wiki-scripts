@@ -1,35 +1,23 @@
 #!/usr/bin/env python
 import re
-#import piexif
+import piexif
 import subprocess
 import glob
-import sys
 appendofwrite='w'
-telezen='zutphen_(plaats).txt'
-#telezen='bos- en gasthuisdistrict.txt'
+telezen='bocholt.txt'
 dirvoorvoegsel='/home/zeeman/Pictures/170623-woestehoeve/'
-datumwens='2018-05-02 16:24'
-datum=datumwens
-catwens="Zutphen"
+datumwens='2018-01-25 13:30'
+catwens="Bocholt"
 #'Burgemeesterswijk en Hoogkamp, Arnhem'
 #'Geitenkamp, Arnhem'
 jaar='18'
-gewensteplaats="Zutphen"
-provincie='Gelderland'
-gpxvoorvoegsel='../gpx1/'
-if len(sys.argv)>1:
-    optehalen=sys.argv[-1]
-    print optehalen
-    subprocess.call(['./wikihaald.py',optehalen])
-    telezen=optehalen.lower()+'.txt'
-#    print telezen
-else:
-    import piexif
+gewensteplaats="Bocholt"
+provincie='NW'
 sedbestandnaam=telezen.replace('.txt','.bash')
 sedbestand=open(sedbestandnaam,'w')
 subprocess.call(['chmod','a+xwr',sedbestandnaam])
 gpxbestandnaam=telezen.replace('.txt','.gpx')
-gpxbestand=open(gpxvoorvoegsel+gpxbestandnaam,'w')
+gpxbestand=open(gpxbestandnaam,'w')
 gpxbestand.write( '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n')
 gpxbestand.write( '<gpx version="1.1" creator="Locus Android"\n')
 gpxbestand.write( ' xmlns="http://www.topografix.com/GPX/1/1"\n')
@@ -49,136 +37,126 @@ wikibestand=wikibestand.replace('\n',' ')
 regulierltgt=re.compile('(<.*?>)')
 lijstltgt=regulierltgt.findall(wikibestand)
 for dingltgt in lijstltgt:
-	wikibestand=wikibestand.replace(dingltgt,'')
+  wikibestand=wikibestand.replace(dingltgt,'')
 #wikibestand=wikibestand.replace(' =','=')
+wikibestand=wikibestand.replace('&nbsp;',' ')
 wikibestand=wikibestand.replace('commonscat=','commonscat =')
 wikibestand=wikibestand.replace('image=','image =')
-reguliera=re.compile('({{[^T].*?}})')
+reguliera=re.compile('({{[^D].*?}})')
 lijst1=reguliera.findall(wikibestand)
 #print lijst1
 for ding in lijst1:
     wikibestand=wikibestand.replace(ding,'')
-reguliere=re.compile('{{Tabelrij gemeentelijk monument(.*?)}')
+reguliere=re.compile('{{Denkmalliste1 Tabellenzeile(.*?)}')
 lijst=reguliere.findall(wikibestand)
 #print lijst
 dictmeervoudige={}
 dictiolijst=[]
 regulierd=re.compile(r'([_a-z]*?) =')
-reguliere=re.compile(r'(image)=')
+reguliere=re.compile(r'(Bild)=')
 regulierf=re.compile(r'=(.*?)\|')
-regulierg=re.compile(r'image=(.*?)\.')
+regulierg=re.compile(r'Bild=(.*?)\.')
 regulierh=re.compile(r'([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]\.JPG)')
 for ding in lijst: #lijst bevat de tabelrijen
     ding+='|'
     dictio={}
     dictio['postcode']=''
-    dictio['image']=''
     dictio['architect']=''
-    dictio['commonscat']=''
-    dictio['aangewezen']=''
     dictio['oorspr_fun']=''
     dictio['kadaster']=''
-    dictio['bouwjaar']=''
+    dictio['Bild']=''
+    dictio['Abmessungen']=''
+    dictio['Commonscat']=''
+    dictio['Bezeichnung']=''
+    dictio['Ortsteil']=''
+    dictio['Adresse']=''
+    dictio['NS']=''
+    dictio['EW']=''
+    dictio['Region']=''
+    dictio['Beschriftung']=''
+    dictio['Beschreibung']=''
+    dictio['Bauzeit']=''
+    dictio['Eintragung']=''
+    dictio['Nummer']=''
 #    print ding
     dinggesplitstlijst=ding.split('|')
 #    print dinggesplitstlijst
     for iets in dinggesplitstlijst:
 	ietslijst=iets.split('=')
-	if len(ietslijst)==2 or len(ietslijst)==3:
+	if len(ietslijst)==2:
 	    sleutel=ietslijst[0].strip()
-	    waarde=ietslijst[-1].strip()
+	    waarde=ietslijst[1].strip()
 	    dictio[sleutel]=waarde
-    plaatjesnaam=dictio['image'].strip()
-    if plaatjesnaam=='' and 'lat' in dictio.keys() and 'lon' in dictio.keys():
-#    if 'lat' in dictio.keys() and 'lon' in dictio.keys():
-	if len(dictio['lat'])>0 and len(dictio['lon'])>0:
-	    gpxbestand.write('<wpt lat="'+dictio['lat']+'" lon="'+dictio['lon']+'">\n')
-	    gpxnaam='  <name>'+dictio['adres']+' '+dictio['object']
-	    gpxnaam+=' '+dictio['bouwjaar']
+    plaatjesnaam=dictio['Bild']
+    if plaatjesnaam=='' and 'NS' in dictio.keys() and 'EW' in dictio.keys():
+	if len(dictio['NS'])>0 and len(dictio['EW'])>0:
+	    gpxbestand.write('<wpt lat="'+dictio['NS']+'" lon="'+dictio['EW']+'">\n')
+	    gpxnaam='  <name>'+dictio['Adresse']+' '+dictio['Bezeichnung']
+	    gpxnaam+=' '+dictio['Bauzeit']
 	    gpxnaam=gpxnaam.replace(';','')
-	    gpxnaam=gpxnaam.replace('&','')
 	    gpxbestand.write(gpxnaam)
 	    gpxbestand.write('</name>\n')
 	    gpxbestand.write('</wpt>\n')
-#    print plaatjesnaam
     lijst3=regulierh.findall(plaatjesnaam)
-    if plaatjesnaam.startswith('IMG_') and plaatjesnaam.endswith('.JPG'):
-	lijst3=[plaatjesnaam]
-    elif len(plaatjesnaam)>12:
-	lijst3=[]
-#    print lijst3
     if len(lijst3)==1:
-#	print lijst3
-#	print dictiolijst
-	dictio['postcode']=dictio['postcode'][:4]+' '+dictio['postcode'][4:].strip()
+#	dictio['postcode']=dictio['postcode'][:4]+' '+dictio['postcode'][4:].strip()
 	regurliera=re.compile('([0-9])')
-	cijfermatch=regurliera.search(dictio['adres'])
+	cijfermatch=regurliera.search(dictio['Adresse'])
 	if cijfermatch:
-	    dictio['straatnaam']=dictio['adres'][:cijfermatch.start()].strip()
-	    dictio['huisnummer']=dictio['adres'][cijfermatch.start():].strip()
+	    dictio['straatnaam']=dictio['Adresse'][:cijfermatch.start()].strip()
+	    dictio['huisnummer']=dictio['Adresse'][cijfermatch.start():].strip()
 	else:
-	    dictio['straatnaam']=dictio['adres'].strip()
+	    dictio['straatnaam']=dictio['Adresse'].strip()
 	    dictio['huisnummer']=''
-#	straat=dictio['adres'].split(' ')[0]
 	if plaatjesnaam not in dictmeervoudige:
 	    dictmeervoudige[plaatjesnaam]=[]
 	    dictiolijst+=[dictio]
 	else:
-	    dictmeervoudige[plaatjesnaam]+=[(dictio['objnr'],dictio['straatnaam'],dictio['huisnummer'],dictio['postcode'])]
-#	    print dictmeervoudige
+	    dictmeervoudige[plaatjesnaam]+=[(dictio['Nummer'],dictio['straatnaam'],dictio['huisnummer'],dictio['postcode'])]
 for dictio in dictiolijst:
-#	print dictio
-	plaatjesnaam=dictio['image']
+	plaatjesnaam=dictio['Bild']
 	dictio['plaats']=gewensteplaats
 	plaats=dictio['plaats']
 	gewenstenaam=plaats.replace(' ','')+'-'+dictio['straatnaam'].lower().replace('.','').replace(' ','')+'-'+jaar+plaatjesnaam.lower()
-	gewenstenaam=gewenstenaam.replace('img_','')
-#	print
- 	oorspronkelijkenaam=plaatjesnaam
-	sedbestand.write(r'sed -i "s/'+oorspronkelijkenaam+r'/'+gewenstenaam+r'/" "'+telezen+'"\n')
+	oorspronkelijkenaam=plaatjesnaam
+	sedbestand.write(r'sed -i "s/'+oorspronkelijkenaam+r'/'+gewenstenaam+r'/" '+telezen+'\n')
 	plaatjezoeken=glob.glob('/home/zeeman/Pictures/'+jaar+'*/'+oorspronkelijkenaam)
 	if len(plaatjezoeken)==1:
 	    oorspronkelijkpad=plaatjezoeken[0]
 	else:
 	    oorspronkelijkpad=dirvoorvoegsel+oorspronkelijkenaam
 	beschrijving='== {{int:filedesc}} ==\n{{Information\n'
-	if dictio['object']=='':
-	    beschrijving+='|description={{nl|1='+'Gemeentelijk monument'
+	if dictio['Bezeichnung']=='':
+	    beschrijving+='|description={{de|1='+'Baudenkmal'
 	else:
-	    beschrijving+='|description={{nl|1='+dictio['object']
+	    beschrijving+='|description={{nl|1='+dictio['Bezeichnung']
 	if not dictio['architect']=='':
 	    beschrijving+=', architect '+dictio['architect']
-	if not dictio['bouwjaar']=='':
-	    beschrijving+=', bouwjaar '+dictio['bouwjaar']
-	if not dictio['aangewezen']=='':
-	    beschrijving+=', gemeentelijk monument sinds '+dictio['aangewezen']
+	if not dictio['Bauzeit']=='':
+	    beschrijving+=', Bauzeit '+dictio['Bauzeit']
+	if not dictio['Eintragung']=='':
+	    beschrijving+=', Baudenkmal seit '+dictio['Eintragung']
 	if not dictio['oorspr_fun']=='':
 	    beschrijving+=', oorspronkelijk '+dictio['oorspr_fun']
 	if not dictio['kadaster']=='':
 	    beschrijving+=', kadasteraanduiding '+dictio['kadaster']
 #++', '+dictio['postcode']+' '+dictio['plaats']+'\n'
 	beschrijving+='}}'
-	beschrijving+='{{Gemeentelijk monument|'+dictio['gemcode']+'/'+dictio['objnr']+'}}\n'
+#	beschrijving+='{{Gemeentelijk monument|'+dictio['gemcode']+'/'+dictio['objnr']+'}}\n'
 	for ding2 in dictmeervoudige[plaatjesnaam]:
 	    (objnr2,straatnaam2,huisnummer2,postcode2)=ding2
 	    beschrijving+='{{Gemeentelijk monument|'+dictio['gemcode']+'/'+objnr2+'}}\n'
 	beschrijving+='{{Building address\n'
-#	adresbestanddelenlijst=dictio['adres'].rsplit()
-#	straatnaam=' '.join(adresbestanddelenlijst[:-1])
-#	huisnummer=adresbestanddelenlijst[-1]
 	beschrijving+='| Street name = '+dictio['straatnaam']+'\n'
 	beschrijving+='| House number = '+dictio['huisnummer']+'\n'
-	beschrijving+='| Postal code = '+dictio['postcode']+'\n'
+#	beschrijving+='| Postal code = '+dictio['postcode']+'\n'
 	beschrijving+='| City = '+dictio['plaats']+'\n'
 	beschrijving+='| State = '+provincie+'\n'
-	beschrijving+='| Country = NL'+'\n'
+	beschrijving+='| Country = DE'+'\n'
 	beschrijving+='}}\n'
 	for ding2 in dictmeervoudige[plaatjesnaam]:
 	    (objnr2,straatnaam2,huisnummer2,postcode2)=ding2
 	    beschrijving+='{{Building address\n'
-#	adresbestanddelenlijst=dictio['adres'].rsplit()
-#	straatnaam=' '.join(adresbestanddelenlijst[:-1])
-#	huisnummer=adresbestanddelenlijst[-1]
 	    beschrijving+='| Street name = '+straatnaam2+'\n'
 	    beschrijving+='| House number = '+huisnummer2+'\n'
 	    beschrijving+='| Postal code = '+postcode2+'\n'
@@ -187,7 +165,6 @@ for dictio in dictiolijst:
 	    beschrijving+='| Country = NL'+'\n'
 	    beschrijving+='}}\n'
 	exifdict=piexif.load(oorspronkelijkpad)
-#	print exifdict
 	for ifd in ('0th','Exif','GPS','1st'):
 	    for tag in exifdict[ifd]:
 		if piexif.TAGS[ifd][tag]["name"]=='DateTime':
@@ -200,16 +177,16 @@ for dictio in dictiolijst:
 	beschrijving+='|permission='+'\n'
 	beschrijving+='|other versions='+'\n'
 	beschrijving+='}}\n'
-	beschrijving+='{{Object location dec|'+dictio['lat']+'|'+dictio['lon']+'}}\n'
+	beschrijving+='{{Object location dec|'+dictio['NS']+'|'+dictio['EW']+'}}\n'
 	beschrijving+='\n'
 	beschrijving+='== {{int:license-header}} ==\n'
 	beschrijving+='{{self|cc-by-sa-4.0}}\n'
 	beschrijving+='\n'
-	if dictio['commonscat']=='':
-	    beschrijving+='[[Category:Gemeentelijke monumenten in '+catwens+']]'
+	if dictio['Commonscat']=='':
+	    beschrijving+='[[Category:Baudenkmaeler in '+catwens+']]'
 #+'\n[[Category:Uploaded via Campaign:wlm-nl]]'+'\n{{Wiki Loves Monuments 2017|nl}}'
 	else:
-	    beschrijving+='[[Category:'+dictio['commonscat']+']]'
+	    beschrijving+='[[Category:'+dictio['Commonscat']+']]'
 #+'\n[[Category:Uploaded via Campaign:wlm-nl]]'+'\n{{Wiki Loves Monuments 2017|nl}}'
 #	print beschrijving
 	alsopdracht='python3 pwb.py scripts/upload.py '

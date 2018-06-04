@@ -1,35 +1,24 @@
 #!/usr/bin/env python
 import re
-#import piexif
+import piexif
 import subprocess
 import glob
-import sys
 appendofwrite='w'
-telezen='zutphen_(plaats).txt'
+telezen='rozendaalrijks.txt'
 #telezen='bos- en gasthuisdistrict.txt'
 dirvoorvoegsel='/home/zeeman/Pictures/170623-woestehoeve/'
-datumwens='2018-05-02 16:24'
-datum=datumwens
-catwens="Zutphen"
+datumwens='2018-01-25 13:30'
+catwens="Rozendaal"
 #'Burgemeesterswijk en Hoogkamp, Arnhem'
 #'Geitenkamp, Arnhem'
 jaar='18'
-gewensteplaats="Zutphen"
+#gewensteplaats="Arnhem"
 provincie='Gelderland'
-gpxvoorvoegsel='../gpx1/'
-if len(sys.argv)>1:
-    optehalen=sys.argv[-1]
-    print optehalen
-    subprocess.call(['./wikihaald.py',optehalen])
-    telezen=optehalen.lower()+'.txt'
-#    print telezen
-else:
-    import piexif
 sedbestandnaam=telezen.replace('.txt','.bash')
 sedbestand=open(sedbestandnaam,'w')
 subprocess.call(['chmod','a+xwr',sedbestandnaam])
 gpxbestandnaam=telezen.replace('.txt','.gpx')
-gpxbestand=open(gpxvoorvoegsel+gpxbestandnaam,'w')
+gpxbestand=open(gpxbestandnaam,'w')
 gpxbestand.write( '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n')
 gpxbestand.write( '<gpx version="1.1" creator="Locus Android"\n')
 gpxbestand.write( ' xmlns="http://www.topografix.com/GPX/1/1"\n')
@@ -58,7 +47,7 @@ lijst1=reguliera.findall(wikibestand)
 #print lijst1
 for ding in lijst1:
     wikibestand=wikibestand.replace(ding,'')
-reguliere=re.compile('{{Tabelrij gemeentelijk monument(.*?)}')
+reguliere=re.compile('{{Tabelrij rijksmonument(.*?)}')
 lijst=reguliere.findall(wikibestand)
 #print lijst
 dictmeervoudige={}
@@ -76,27 +65,31 @@ for ding in lijst: #lijst bevat de tabelrijen
     dictio['architect']=''
     dictio['commonscat']=''
     dictio['aangewezen']=''
-    dictio['oorspr_fun']=''
+    dictio['oorspr_functie']=''
     dictio['kadaster']=''
-    dictio['bouwjaar']=''
 #    print ding
     dinggesplitstlijst=ding.split('|')
 #    print dinggesplitstlijst
     for iets in dinggesplitstlijst:
 	ietslijst=iets.split('=')
-	if len(ietslijst)==2 or len(ietslijst)==3:
+	if len(ietslijst)==2:
 	    sleutel=ietslijst[0].strip()
-	    waarde=ietslijst[-1].strip()
+	    waarde=ietslijst[1].strip()
 	    dictio[sleutel]=waarde
+#    lijst1=regulierd.findall(ding)#+reguliere.findall(ding)
+#    lijst2=regulierf.findall(ding)+regulierg.findall(ding)
+#    for (sleutel,waarde) in zip(lijst1,lijst2):
+#	dictio[sleutel]=waarde.strip()
+#    print dictio
+#    print ding
     plaatjesnaam=dictio['image'].strip()
     if plaatjesnaam=='' and 'lat' in dictio.keys() and 'lon' in dictio.keys():
 #    if 'lat' in dictio.keys() and 'lon' in dictio.keys():
 	if len(dictio['lat'])>0 and len(dictio['lon'])>0:
 	    gpxbestand.write('<wpt lat="'+dictio['lat']+'" lon="'+dictio['lon']+'">\n')
-	    gpxnaam='  <name>'+dictio['adres']+' '+dictio['object']
+	    gpxnaam='  <name>'+dictio['adres']+' '+dictio['objectnaam']
 	    gpxnaam+=' '+dictio['bouwjaar']
 	    gpxnaam=gpxnaam.replace(';','')
-	    gpxnaam=gpxnaam.replace('&','')
 	    gpxbestand.write(gpxnaam)
 	    gpxbestand.write('</name>\n')
 	    gpxbestand.write('</wpt>\n')
@@ -104,8 +97,6 @@ for ding in lijst: #lijst bevat de tabelrijen
     lijst3=regulierh.findall(plaatjesnaam)
     if plaatjesnaam.startswith('IMG_') and plaatjesnaam.endswith('.JPG'):
 	lijst3=[plaatjesnaam]
-    elif len(plaatjesnaam)>12:
-	lijst3=[]
 #    print lijst3
     if len(lijst3)==1:
 #	print lijst3
@@ -124,12 +115,12 @@ for ding in lijst: #lijst bevat de tabelrijen
 	    dictmeervoudige[plaatjesnaam]=[]
 	    dictiolijst+=[dictio]
 	else:
-	    dictmeervoudige[plaatjesnaam]+=[(dictio['objnr'],dictio['straatnaam'],dictio['huisnummer'],dictio['postcode'])]
+	    dictmeervoudige[plaatjesnaam]+=[(dictio['objrijksnr'],dictio['straatnaam'],dictio['huisnummer'],dictio['postcode'])]
 #	    print dictmeervoudige
 for dictio in dictiolijst:
 #	print dictio
 	plaatjesnaam=dictio['image']
-	dictio['plaats']=gewensteplaats
+	dictio['plaats']=dictio['woonplaats']
 	plaats=dictio['plaats']
 	gewenstenaam=plaats.replace(' ','')+'-'+dictio['straatnaam'].lower().replace('.','').replace(' ','')+'-'+jaar+plaatjesnaam.lower()
 	gewenstenaam=gewenstenaam.replace('img_','')
@@ -142,26 +133,26 @@ for dictio in dictiolijst:
 	else:
 	    oorspronkelijkpad=dirvoorvoegsel+oorspronkelijkenaam
 	beschrijving='== {{int:filedesc}} ==\n{{Information\n'
-	if dictio['object']=='':
-	    beschrijving+='|description={{nl|1='+'Gemeentelijk monument'
+	if dictio['objectnaam']=='':
+	    beschrijving+='|description={{nl|1='+'Rijksmonument'
 	else:
-	    beschrijving+='|description={{nl|1='+dictio['object']
+	    beschrijving+='|description={{nl|1='+dictio['objectnaam']
 	if not dictio['architect']=='':
 	    beschrijving+=', architect '+dictio['architect']
 	if not dictio['bouwjaar']=='':
 	    beschrijving+=', bouwjaar '+dictio['bouwjaar']
 	if not dictio['aangewezen']=='':
-	    beschrijving+=', gemeentelijk monument sinds '+dictio['aangewezen']
-	if not dictio['oorspr_fun']=='':
-	    beschrijving+=', oorspronkelijk '+dictio['oorspr_fun']
+	    beschrijving+=', rijksmonument sinds '+dictio['aangewezen']
+	if not dictio['oorspr_functie']=='':
+	    beschrijving+=', oorspronkelijk '+dictio['oorspr_functie']
 	if not dictio['kadaster']=='':
 	    beschrijving+=', kadasteraanduiding '+dictio['kadaster']
 #++', '+dictio['postcode']+' '+dictio['plaats']+'\n'
 	beschrijving+='}}'
-	beschrijving+='{{Gemeentelijk monument|'+dictio['gemcode']+'/'+dictio['objnr']+'}}\n'
+	beschrijving+='{{Rijksmonument|'+dictio['objrijksnr']+'}}\n'
 	for ding2 in dictmeervoudige[plaatjesnaam]:
-	    (objnr2,straatnaam2,huisnummer2,postcode2)=ding2
-	    beschrijving+='{{Gemeentelijk monument|'+dictio['gemcode']+'/'+objnr2+'}}\n'
+	    (objrijksnr2,straatnaam2,huisnummer2,postcode2)=ding2
+	    beschrijving+='{{Rijksmonument|'+objrijksnr2+'}}\n'
 	beschrijving+='{{Building address\n'
 #	adresbestanddelenlijst=dictio['adres'].rsplit()
 #	straatnaam=' '.join(adresbestanddelenlijst[:-1])
@@ -174,7 +165,7 @@ for dictio in dictiolijst:
 	beschrijving+='| Country = NL'+'\n'
 	beschrijving+='}}\n'
 	for ding2 in dictmeervoudige[plaatjesnaam]:
-	    (objnr2,straatnaam2,huisnummer2,postcode2)=ding2
+	    (objrijksnr2,straatnaam2,huisnummer2,postcode2)=ding2
 	    beschrijving+='{{Building address\n'
 #	adresbestanddelenlijst=dictio['adres'].rsplit()
 #	straatnaam=' '.join(adresbestanddelenlijst[:-1])
@@ -187,7 +178,6 @@ for dictio in dictiolijst:
 	    beschrijving+='| Country = NL'+'\n'
 	    beschrijving+='}}\n'
 	exifdict=piexif.load(oorspronkelijkpad)
-#	print exifdict
 	for ifd in ('0th','Exif','GPS','1st'):
 	    for tag in exifdict[ifd]:
 		if piexif.TAGS[ifd][tag]["name"]=='DateTime':
@@ -206,7 +196,7 @@ for dictio in dictiolijst:
 	beschrijving+='{{self|cc-by-sa-4.0}}\n'
 	beschrijving+='\n'
 	if dictio['commonscat']=='':
-	    beschrijving+='[[Category:Gemeentelijke monumenten in '+catwens+']]'
+	    beschrijving+='[[Category:Rijksmonumenten in '+catwens+']]'
 #+'\n[[Category:Uploaded via Campaign:wlm-nl]]'+'\n{{Wiki Loves Monuments 2017|nl}}'
 	else:
 	    beschrijving+='[[Category:'+dictio['commonscat']+']]'

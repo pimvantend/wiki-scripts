@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import geocoder,re,time,readline,sys
-ophalen=True
-ernst=True
+ophalen=False
+ernst=False
 handmatig=True
 ortsteile=True
 aanvullen=False
